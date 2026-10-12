@@ -1,0 +1,25 @@
+{
+  "attempted_at": "2026-10-12T11:01:50.115200+00:00",
+  "sections": {
+    "institutions": {
+      "status": "not_configured",
+      "data": null
+    },
+    "ptr": {
+      "status": "not_configured",
+      "data": null
+    },
+    "market_news": {
+      "status": "not_configured",
+      "data": null
+    },
+    "stock_news": {
+      "status": "not_configured",
+      "data": null
+    },
+    "calendar": {
+      "status": "not_configured",
+      "data": null
+    }
+  }
+}
