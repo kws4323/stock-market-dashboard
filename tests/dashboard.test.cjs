@@ -78,3 +78,23 @@ test('issuer-confirmed events preserve confirmation and provenance in exported c
   assert.ok(ics.includes('STATUS:CONFIRMED'));
   assert.ok(ics.replace(/\r\n /g,'').includes('https://example.org/ir'));
 });
+
+
+test('member charts use transaction counts, separate members and never infer amounts', () => {
+  const rows = [{firstName:'A',lastName:'One',chamber:'house',symbol:'X',type:'매수',owner:'SP',transactionDate:'2026-10-01',amount:'$1 - $999'},
+    {firstName:'A',lastName:'One',chamber:'house',symbol:'X',type:'매도 (일부)',owner:'JT',transactionDate:'2026-10-02'},
+    {firstName:'B',lastName:'Two',chamber:'house',symbol:'Y',type:'매수',transactionDate:'2026-09-01'}];
+  const selected = m.filterTrades(rows,{member:m.memberKey(rows[0])});
+  assert.equal(selected.length,2);
+  assert.deepEqual(m.tradeComposition(selected),[{name:'X',count:2,percent:100}]);
+  assert.equal(m.filterTrades(rows,{type:'매도'}).length,1);
+  assert.equal(m.filterTrades(rows,{owner:'SP',from:'2026-10-01',to:'2026-10-01'}).length,1);
+  assert.equal(m.filterTrades(rows,{from:'2026-10-03'}).length,0);
+  assert.equal(m.filterTrades(rows,{chamber:'senate'}).length,0);
+  assert.deepEqual(m.tradeComposition([]),[]);
+  assert.ok(Math.abs(m.tradeComposition(rows).reduce((n,r)=>n+r.percent,0)-100) < 1e-10);
+});
+test('dated trade filters exclude unknown dates and keys preserve distinct chambers', () => {
+  assert.equal(m.filterTrades([{transactionDate:'unknown'}],{from:'2026-01-01'}).length,0);
+  assert.notEqual(m.memberKey({chamber:'house',firstName:'A'}),m.memberKey({chamber:'senate',firstName:'A'}));
+});

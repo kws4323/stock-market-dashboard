@@ -42,6 +42,16 @@ let fixture = {sections:{institutions:ok([manager('1',[holding('X','AAPL','Apple
     await page.selectOption('#ptr-chamber','house');
     assert.ok((await page.locator('#ptr-data').innerText()).includes('Alpha'));
     assert.ok(!(await page.locator('#ptr-data').innerText()).includes('Beta'));
+    await page.selectOption('#ptr-member',{label:'Alpha Tester · 하원'});
+    assert.equal(await page.locator('#ptr-chart .trade-pie').count(),1);
+    assert.ok((await page.locator('#ptr-chart').innerText()).includes('AAPL · 1건 (100%)'));
+    const ptrWait=page.waitForEvent('download'); await page.click('#ptr-csv'); const ptrDownload=await ptrWait;
+    await ptrDownload.saveAs('work/test-ptr.csv'); assert.ok(fs.readFileSync('work/test-ptr.csv','utf8').includes('Alpha Tester'));
+    await page.fill('#ptr-from','2026-10-01'); await page.locator('#ptr-from').blur();
+    assert.equal(await page.locator('#ptr-csv').isDisabled(),true);
+    await page.click('#ptr-reset');
+    assert.equal(await page.locator('#ptr-member option').count(),3);
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
     await page.fill('#calendar-from','2026-10-20'); await page.fill('#calendar-to','2026-10-20'); await page.locator('#calendar-to').blur();
     assert.equal(await page.locator('#calendar-data > .table-wrap tbody tr').count(),1);
     const csvWait=page.waitForEvent('download'); await page.click('#calendar-csv'); const csv=await csvWait;

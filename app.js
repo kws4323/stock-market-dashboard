@@ -210,7 +210,43 @@ function institutions() {
     root.append(c);
   });
 }
+let ptrExport = [];
+function memberOptions() {
+  const rows = research?.sections?.ptr?.data || [];
+  const select = $('ptr-member'), selected = select.value;
+  select.replaceChildren(node('option', '전체 의원'));
+  select.firstChild.value = '';
+  const members = new Map();
+  rows.forEach(r => { if (!$('ptr-chamber').value || r.chamber === $('ptr-chamber').value) members.set(model.memberKey(r), r); });
+  [...members].sort((a,b) => `${a[1].firstName} ${a[1].lastName}`.localeCompare(`${b[1].firstName} ${b[1].lastName}`)).forEach(([key,r]) => {
+    const o = node('option', `${r.firstName || ''} ${r.lastName || ''} · ${r.chamber === 'house' ? '하원' : '상원'}`); o.value = key; select.append(o);
+  });
+  if (members.has(selected)) select.value = selected;
+}
+function tradeChart(rows) {
+  const root = $('ptr-chart'); root.replaceChildren();
+  const title = $('ptr-member').value ? $('ptr-member').selectedOptions[0].textContent : '전체 수집 의원';
+  root.append(node('h3', `${title} · 공시 거래 구성`));
+  root.append(node('p', '원그래프 = 선택 조건에 맞는 종목별 거래 건수 / 전체 거래 건수. 현재 보유 포트폴리오나 투자금액 비중이 아닙니다. 매도는 보유잔액에서 차감하지 않으며 배우자·공동·자녀 거래도 선택 조건에 따라 포함합니다.', 'note'));
+  if (!rows.length) { root.append(node('p', '선택 조건에 맞는 거래가 없습니다.', 'empty')); return; }
+  const dates = rows.map(r => r.transactionDate).filter(model.validDate).sort();
+  root.append(node('p', `${rows.length}건 · ${new Set(rows.map(model.memberKey)).size}명 · ${dates[0] || '거래일 미확인'} ~ ${dates.at(-1) || '미확인'} · 매수 ${rows.filter(r => (r.type || '').startsWith('매수')).length} / 매도 ${rows.filter(r => (r.type || '').startsWith('매도')).length}건`, 'muted'));
+  const groups = model.tradeComposition(rows), slices = groups.slice(0,9);
+  if (groups.length > 9) { const count = groups.slice(9).reduce((n,r) => n+r.count,0); slices.push({name:'기타 종목',count,percent:count/rows.length*100}); }
+  const colors = ['#6d28d9','#a78bfa','#2563eb','#0f766e','#db2777','#c2410c','#475569','#7e22ce','#0369a1','#94a3b8'];
+  let offset = 0;
+  const stops = slices.map((r,i) => { const start = offset; offset += r.percent; return `${colors[i]} ${start}% ${offset}%`; });
+  const layout = node('div',null,'trade-chart-layout'), pie = node('div',null,'trade-pie');
+  pie.style.background = `conic-gradient(${stops.join(',')})`; pie.setAttribute('role','img'); pie.setAttribute('aria-label', `${title} 종목별 거래 건수 원그래프. 상세 비중은 다음 표 참조.`);
+  layout.append(pie);
+  const legend = node('div',null,'trade-legend');
+  slices.forEach((r,i) => { const line = node('p'), dot = node('span','●'); dot.style.color=colors[i]; line.append(dot,document.createTextNode(` ${r.name} · ${r.count}건 (${fmt(r.percent)}%)`)); legend.append(line); });
+  layout.append(legend); root.append(layout);
+  const details = node('details'); details.append(node('summary', `전체 ${groups.length}개 종목의 거래 비중 보기`));
+  table(details,['종목','거래 건수','거래 건수 비중'],groups.map(r=>[r.name,r.count,`${fmt(r.percent)}%`])); root.append(details);
+}
 function ptr() {
+  ptrExport = []; $('ptr-csv').disabled = true; $('ptr-chart').replaceChildren();
   const root = $('ptr-data'), data = section('ptr', root);
   if (!data) return;
   const metadata = research.sections.ptr.meta;
@@ -221,9 +257,11 @@ function ptr() {
     table(details, ['신고일', '신고인', '추출 상태', '거래 행', '원문'], (metadata.documents || []).map(d => [d.disclosureDate, `${d.firstName} ${d.lastName}`, labels[d.status] || d.status, d.parsed_rows || 0, link('공식 PDF', d.link)]));
     root.append(details);
   }
-  const q = $('ptr-query').value.trim().toUpperCase(), chamber = $('ptr-chamber').value;
-  const filtered = data.filter(r => (!chamber || r.chamber === chamber) &&
-    (!q || `${r.firstName || ''} ${r.lastName || ''} ${r.symbol || ''} ${r.assetDescription || ''}`.toUpperCase().includes(q)));
+  const from = $('ptr-from').value, to = $('ptr-to').value;
+  if (from && to && from > to) { empty($('ptr-chart'), '종료일은 시작일 이후로 선택하세요.'); return; }
+  const filtered = model.filterTrades(data, {query:$('ptr-query').value, chamber:$('ptr-chamber').value, member:$('ptr-member').value, type:$('ptr-type').value, owner:$('ptr-owner').value, from, to});
+  ptrExport = filtered; $('ptr-csv').disabled = !filtered.length;
+  tradeChart(filtered);
   root.append(node('p', `표시 ${filtered.length} / ${data.length}건`, 'muted'));
   if (!filtered.length) { root.append(node('p', '조건에 맞는 거래 공시가 없습니다.', 'empty')); return; }
   table(root, ['의원 / 소속', '종목', '거래일', '신고일', '유형 / 소유자', '금액 범위', '공시'], filtered.map(r => [
@@ -271,7 +309,10 @@ $('period').onchange = () => search();
 $('security').onchange = () => search(false, $('security').value);
 ['market-category', 'market-sort', 'favorites-only'].forEach(id => $(id).onchange = () => renderMarkets());
 $('news-topic').onchange = marketNews; $('news-query').oninput = marketNews;
-$('ptr-chamber').onchange = ptr; $('ptr-query').oninput = ptr;
+$('ptr-chamber').onchange = () => { memberOptions(); ptr(); }; $('ptr-query').oninput = ptr;
+['ptr-member','ptr-type','ptr-owner','ptr-from','ptr-to'].forEach(id => $(id).onchange = ptr);
+$('ptr-reset').onclick = () => { ['ptr-chamber','ptr-query','ptr-member','ptr-type','ptr-owner','ptr-from','ptr-to'].forEach(id => $(id).value = ''); memberOptions(); ptr(); };
+$('ptr-csv').onclick = () => download(model.toCSV([['의원','의회','종목','거래일','신고일','거래 유형','소유자','신고 금액 범위','공식 원문','원문 페이지'], ...ptrExport.map(r => [`${r.firstName || ''} ${r.lastName || ''}`,r.chamber,r.symbol || r.assetDescription,r.transactionDate,r.disclosureDate,r.type,r.owner,r.amount,r.link,r.page])]), 'text/csv;charset=utf-8','member-reported-transactions.csv');
 ['country', 'calendar-from', 'calendar-to'].forEach(id => $(id).onchange = calendar);
 $('calendar-query').oninput = calendar;
 $('calendar-reset').onclick = () => { ['calendar-from', 'calendar-to', 'calendar-query'].forEach(id => $(id).value = ''); calendar(); };
@@ -293,7 +334,7 @@ async function load(path) {
 renderRecentSearches();
 load('./data/markets.json').then(renderMarkets).catch(e => $('status').textContent = e.message);
 load('./data/research.json').then(data => {
-  research = data; sourceStatus(); institutions(); search(); ptr(); calendar();
+  research = data; sourceStatus(); institutions(); search(); memberOptions(); ptr(); calendar();
   const topics = [...new Set((data.sections?.market_news?.data || []).map(r => r.impact_tag).filter(Boolean))].sort();
   topics.forEach(t => $('news-topic').append(Object.assign(node('option', t), {value: t})));
   marketNews();
