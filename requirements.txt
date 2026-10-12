@@ -1,1 +1,2 @@
 yfinance>=0.2.65,<2
+pdfplumber>=0.11,<1

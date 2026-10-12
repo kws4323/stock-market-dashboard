@@ -105,11 +105,34 @@ function renderMarkets(data = marketSnapshot) {
 function digest(root, data) {
   if (!data) return;
   if (!data.length) { root.append(node('p', '조건에 맞는 기사가 없습니다.', 'empty')); return; }
-  data.forEach(r => {
+  data.slice(0, 9).forEach(r => {
     const c = node('article', null, 'card');
     c.append(node('small', `${r.publisher || '출처 미확인'} · ${timeLabel(r.published_at)}`), node('h3', r.title), node('p', r.impact_tag, 'badge'), link('기사 원문 ↗', r.url));
+    if (r.summary) c.insertBefore(node('p', r.summary, 'feed-summary'), c.lastChild);
+    if (r.watch_point) c.append(node('p', r.watch_point, 'muted'));
+    if (r.stale) c.append(node('p', '이번 수집 실패 · 이전 자료', 'note'));
     root.append(c);
   });
+  if (data.length > 9) {
+    const more = node('button', `더 보기 · 남은 ${data.length - 9}건`, 'secondary');
+    more.onclick = () => { more.remove(); digest(root, data.slice(9)); };
+    root.append(more);
+  }
+}
+
+function sourceStatus() {
+  const root = $('source-status'); root.replaceChildren();
+  if (research.mode === 'free') { $('data-mode').hidden = false; $('data-mode').textContent = '무료 데이터 · 공식 원문 + 무료 제공처'; }
+  const sources = (research.sources || []).map(s => [link(s.name, s.url), s.status === 'ok' ? `수집 성공 · ${s.count ?? ''}건` : s.status === 'stale' ? '이전 자료' : '접근 실패', timeLabel(s.collected_at)]);
+  for (const m of research.sections?.institutions?.data || []) sources.push([
+    m.name + ' · SEC', m.status === 'ok' ? `${m.period} 분기` : m.error || '수집 실패', timeLabel(m.collected_at)
+  ]);
+  const ptrMeta = research.sections?.ptr?.meta;
+  if (ptrMeta) sources.push(['미국 하원 PTR', `${ptrMeta.selected_documents}개 문서 선택 · 상원 미수집`, timeLabel(ptrMeta.collected_at)]);
+  const countries = research.sections?.calendar?.data?.countries || {};
+  for (const [country, c] of Object.entries(countries)) sources.push([`${country} 시총·일정`, c.status === 'error' ? c.error : `${c.covered}개 종목 · ${c.events.length}개 일정 / Yahoo 비공식`, timeLabel(c.collected_at)]);
+  if (sources.length) table(root, ['출처', '수집 범위 / 상태', '최근 수집'], sources);
+  else empty(root, '연결된 데이터 출처가 없습니다.');
 }
 function marketNews() {
   const root = $('market-news'), data = section('market_news', root);
@@ -178,7 +201,7 @@ function institutions() {
   $('coverage').textContent = `추적 대상 ${data.length}개 · 정상 ${data.filter(m => m.status === 'ok').length}개 · 오류 ${data.filter(m => m.status !== 'ok').length}개. 분기별로 분모가 달라질 수 있습니다.`;
   data.forEach(m => {
     const c = node('article', null, 'card'); c.append(node('h3', m.name));
-    if (m.status !== 'ok') c.append(node('p', m.error, 'muted'));
+    if (m.status !== 'ok') c.append(node('p', m.error, 'muted'), link('SEC 공식 원문 조회 ↗', `https://www.sec.gov/edgar/browse/?CIK=${encodeURIComponent(m.cik)}&owner=exclude`));
     else {
       c.append(node('p', `${m.previous_period} → ${m.period}`), link('현재 SEC 원문 ↗', m.source_url), node('p'), link('이전 SEC 원문 ↗', m.previous_source_url));
       m.holdings.filter(h => h.change !== 'unchanged').sort((a, b) => b.weight_pct - a.weight_pct).slice(0, 5)
@@ -190,6 +213,14 @@ function institutions() {
 function ptr() {
   const root = $('ptr-data'), data = section('ptr', root);
   if (!data) return;
+  const metadata = research.sections.ptr.meta;
+  if (metadata) {
+    root.append(node('p', `하원 공시 목록 ${metadata.index_documents}건 중 최근 ${metadata.selected_documents}개 문서 확인 · 추출 거래 ${data.length}건 · 상원은 공식 검색 링크로 확인`, 'note'));
+    const details = node('details'); details.append(node('summary', '문서별 추출 상태와 원문'));
+    const labels = {parsed:'표 추출 완료',partial:'일부 행 미해석',unparsed:'표 미해석',not_current_member:'현직 의원 확인 불가',too_many_pages:'페이지 제한 초과',error:'접근/추출 실패'};
+    table(details, ['신고일', '신고인', '추출 상태', '거래 행', '원문'], (metadata.documents || []).map(d => [d.disclosureDate, `${d.firstName} ${d.lastName}`, labels[d.status] || d.status, d.parsed_rows || 0, link('공식 PDF', d.link)]));
+    root.append(details);
+  }
   const q = $('ptr-query').value.trim().toUpperCase(), chamber = $('ptr-chamber').value;
   const filtered = data.filter(r => (!chamber || r.chamber === chamber) &&
     (!q || `${r.firstName || ''} ${r.lastName || ''} ${r.symbol || ''} ${r.assetDescription || ''}`.toUpperCase().includes(q)));
@@ -198,7 +229,7 @@ function ptr() {
   table(root, ['의원 / 소속', '종목', '거래일', '신고일', '유형 / 소유자', '금액 범위', '공시'], filtered.map(r => [
     `${r.firstName || ''} ${r.lastName || ''} · ${r.chamber === 'house' ? '하원' : '상원'}`, r.symbol || r.assetDescription || '미확인',
     r.transactionDate || '미확인', r.disclosureDate || r.dateRecieved || '미확인', `${r.type || '미확인'} / ${r.owner || '미확인'}`,
-    r.amount || '미확인', link('공시 원문', r.link)
+    r.amount || '미확인', link(r.page ? `원문 ${r.page}쪽` : '공시 원문', r.link ? r.link + (r.page ? '#page=' + r.page : '') : null)
   ]));
 }
 function calendar() {
@@ -207,17 +238,19 @@ function calendar() {
   if (!data) return;
   const country = $('country').value, c = data.countries[country];
   if (!c) { root.append(node('p', '이 시장의 일정 데이터가 없습니다.', 'empty')); return; }
+  if (c.status === 'error') { root.append(node('p', c.error || '이 시장의 수집 실패', 'empty')); return; }
+  if (c.status === 'stale') root.append(node('p', '이 시장의 이번 수집 실패 · 이전 자료', 'note'));
   root.append(node('p', `${data.from} ~ ${data.to} · 순위 수집 ${timeLabel(data.ranked_at)}`, 'muted'));
   root.append(node('h3', `회사 수록 ${c.covered}/${c.target} · 발표일 미확인 ${c.missing_schedule.length}개`));
-  if (!c.coverage_complete) root.append(node('p', '커버리지 부족: 요청한 상위 회사 수를 충족하지 못했습니다. 완전한 전국 시총 순위로 해석할 수 없습니다.', 'note'));
+  if (!c.coverage_complete) root.append(node('p', c.target_reached ? '목표 종목 수는 수집했으나 무료 제공처의 범위입니다. 공식 거래소의 완전한 회사별 시총 순위로 검증되지 않았습니다.' : '커버리지 부족: 요청한 상위 회사 수를 충족하지 못했습니다. 완전한 전국 시총 순위로 해석할 수 없습니다.', 'note'));
   const from = $('calendar-from').value, to = $('calendar-to').value;
   if (from && to && from > to) { root.append(node('p', '종료일은 시작일 이후로 선택하세요.', 'empty')); return; }
   const filtered = model.filterEarnings(c.events, c.universe, {from, to, query: $('calendar-query').value});
   const names = Object.fromEntries(c.universe.map(r => [r.symbol, r]));
   root.append(node('p', `조건에 맞는 일정 ${filtered.length}건`, 'muted'));
   if (filtered.length) {
-    table(root, ['발표 예정일', '시총 순위', '회사 / 종목', 'EPS 예상', '일정 상태'], filtered.map(r => [
-      r.date, names[r.symbol]?.rank, `${names[r.symbol]?.name || r.symbol} (${r.symbol})`, fmt(r.eps_estimated), '제공처 예정 · 회사 IR 확인 필요'
+    table(root, ['발표 예정일', '제공처 시총 순위', '회사 / 종목', 'EPS 예상', '일정 상태 / 원문'], filtered.map(r => [
+      r.date, names[r.symbol]?.rank, `${names[r.symbol]?.name || r.symbol} (${r.symbol})`, fmt(r.eps_estimated), link(r.status === 'official_confirmed' ? '기업 공식 발표 확인' : '제공처 예정 · IR 미확인', r.source_url)
     ]));
     exportContext = {events: filtered, country, universe: c.universe};
     $('calendar-csv').disabled = false; $('calendar-ics').disabled = false;
@@ -245,7 +278,7 @@ $('calendar-reset').onclick = () => { ['calendar-from', 'calendar-to', 'calendar
 $('calendar-csv').onclick = () => {
   if (!exportContext) return;
   const {events, country, universe} = exportContext, names = Object.fromEntries(universe.map(r => [r.symbol, r.name]));
-  download(model.toCSV([['발표 예정일', '시장', '회사', '티커', '일정 상태'], ...events.map(r => [r.date, country, names[r.symbol], r.symbol, '제공처 예정 / 회사 IR 미확인'])]), 'text/csv;charset=utf-8', `earnings-${country}.csv`);
+  download(model.toCSV([['발표 예정일', '시장', '회사', '티커', '일정 상태', '원문'], ...events.map(r => [r.date, country, names[r.symbol], r.symbol, r.status === 'official_confirmed' ? '기업 공식 발표 확인' : '제공처 예정 / 회사 IR 미확인', r.source_url || ''])]), 'text/csv;charset=utf-8', `earnings-${country}.csv`);
 };
 $('calendar-ics').onclick = () => {
   if (!exportContext) return;
@@ -260,7 +293,7 @@ async function load(path) {
 renderRecentSearches();
 load('./data/markets.json').then(renderMarkets).catch(e => $('status').textContent = e.message);
 load('./data/research.json').then(data => {
-  research = data; institutions(); search(); ptr(); calendar();
+  research = data; sourceStatus(); institutions(); search(); ptr(); calendar();
   const topics = [...new Set((data.sections?.market_news?.data || []).map(r => r.impact_tag).filter(Boolean))].sort();
   topics.forEach(t => $('news-topic').append(Object.assign(node('option', t), {value: t})));
   marketNews();

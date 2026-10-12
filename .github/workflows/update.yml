@@ -26,6 +26,13 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/update.py
       - run: python -m unittest discover -s tests -v
+      - uses: actions/cache@v4
+        with:
+          path: |
+            work/ptr-cache
+            work/sec-cache
+          key: free-sources-v2-${{ github.run_id }}
+          restore-keys: free-sources-v2-
       - name: Collect research snapshots
         run: python scripts/research.py
         env:

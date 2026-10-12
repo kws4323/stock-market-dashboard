@@ -18,7 +18,7 @@ let fixture = {sections:{institutions:ok([manager('1',[holding('X','AAPL','Apple
     page.on('pageerror',e=>errors.push(e.message));
     await page.goto('http://127.0.0.1:'+server.address().port);
     await page.waitForSelector('#markets .card');
-    await page.waitForSelector('#calendar-data .empty');
+    await page.waitForFunction(()=>document.querySelector('#calendar-data').textContent.trim().length>0);
     await page.locator('#markets .favorite').first().click();
     await page.check('#favorites-only'); assert.equal(await page.locator('#markets .card').count(),1);
     await page.reload(); await page.waitForSelector('#markets .favorite[aria-pressed="true"]');

@@ -1,4 +1,5 @@
 {
+  "free_mode": true,
   "institutions": [
     {"name": "Berkshire Hathaway", "cik": "1067983"},
     {"name": "Bridgewater Associates", "cik": "1350694"},

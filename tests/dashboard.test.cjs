@@ -73,3 +73,8 @@ test('ICS escapes provider text and ignores malformed event dates', () => {
   assert.equal(ics.split('\r\nBEGIN:VEVENT\r\n').length, 2);
   assert.ok(ics.includes('Name\\nBEGIN:VEVENT\\,semi\\;slash\\\\'));
 });
+test('issuer-confirmed events preserve confirmation and provenance in exported calendars', () => {
+  const ics=m.toICS([{symbol:'TEST',date:'2026-10-12',status:'official_confirmed',source_url:'https://example.org/ir'}],'US',[]);
+  assert.ok(ics.includes('STATUS:CONFIRMED'));
+  assert.ok(ics.replace(/\r\n /g,'').includes('https://example.org/ir'));
+});
