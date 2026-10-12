@@ -46,3 +46,15 @@ The collector and tests use only the Python standard library; the existing marke
 - [FMP terms](https://site.financialmodelingprep.com/terms-of-service)
 - [House original disclosures](https://disclosures-clerk.house.gov/FinancialDisclosure)
 - [Senate original disclosures](https://efdsearch.senate.gov/search/)
+
+## Browser features (API connection deferred)
+
+- Save favorite market indicators with star buttons, filter favorites or Korean/US/other indicators, and sort daily percentage changes. Favorites and up to eight recent searches are stored only in this browser. Storage failure does not prevent dashboard use.
+- Ambiguous company-name searches require choosing one CUSIP before calculating a holding ratio. Different securities are never merged into one ratio. Missing ticker mappings show an unknown result rather than claiming zero ownership. Stock news can be searched independently when the SEC section is unavailable.
+- News supports topic and headline/publisher filters. Congressional PTR supports chamber and person/ticker filters.
+- Earnings supports market, company and inclusive date-range filters. CSV and `.ics` exports include **only the visible filtered events**. Calendar events are tentative all-day dates, retain the reported calendar day, and do not include inferred announcement times or auto-update after download. CSV cells are protected against spreadsheet formula injection; calendar text is escaped and UTF-8 lines are folded to RFC 5545 limits.
+- Collection timestamps with explicit offsets display in KST. Provider timestamps with no timezone retain their supplied form and are labeled provider time.
+
+Frontend calculation/export tests: `node --test tests/dashboard.test.cjs`. API credential activation remains deferred at the user's request.
+
+Optional browser regression suite: install the development dependency with `npm install`, install Chromium with `npx playwright install chromium`, then run `npm run test:browser`. It starts a temporary server on a randomly assigned localhost port, checks persistence and filters, and validates CSV/ICS downloads using **test-only fixtures**. Nothing is published or sent to an API. Screenshots and downloaded test files go in ignored `work/`. `CHROME_PATH` can select an installed Chromium/Chrome binary; `PLAYWRIGHT_MODULE` can select an existing local Playwright installation. Browser tests were run locally; CI runs the 20 Python/JavaScript calculation tests.
