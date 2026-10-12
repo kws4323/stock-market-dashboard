@@ -17,4 +17,5 @@ function calendar() {const root=$('calendar-data'),data=section('calendar',root)
 $('search').onsubmit=e=>{e.preventDefault();search();};$('period').onchange=search;$('country').onchange=calendar;
 async function load(path) {const r=await fetch(path+'?ts='+Date.now());if(!r.ok)throw Error('데이터 파일을 가져올 수 없습니다');return r.json();}
 load('./data/markets.json').then(renderMarkets).catch(e=>$('status').textContent=e.message);
-load('./data/research.json').then(data=>{research=data;institutions();ptr();calendar();digest($('market-news'),section('market_news',$('market-news')));}).catch(()=>['institutions','stock-news','market-news','ptr-data','calendar-data'].forEach(id=>empty($(id),'연구 데이터 파일을 불러올 수 없습니다. 다음 자동 업데이트를 확인하세요.')));
+load('./data/research.json').then(data=>{research=data;institutions();digest($("stock-news"),section("stock_news",$("stock-news")));ptr();calendar();digest($('market-news'),section('market_news',$('market-news')));}).catch(()=>['institutions','stock-news','market-news','ptr-data','calendar-data'].forEach(id=>empty($(id),'연구 데이터 파일을 불러올 수 없습니다. 다음 자동 업데이트를 확인하세요.')));
+
