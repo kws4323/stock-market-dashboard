@@ -1,0 +1,41 @@
+name: Free data source validation
+on:
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'config/**'
+      - 'requirements.txt'
+      - '.github/workflows/free-validation.yml'
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/research.py
+      - name: Summarize provider coverage
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/research.json'))
+          for name,s in d['sections'].items():
+              print(name,s['status'])
+              if name=='institutions':
+                  for m in s['data'] or []:
+                      print(m['name'],m['status'],m.get('period'),m.get('error'))
+              if name=='calendar' and s.get('data'):
+                  for country,c in s['data']['countries'].items():
+                      print(country,c.get('status'),c['covered'],len(c['events']))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: free-research-snapshot
+          path: data/research.json
+          retention-days: 2

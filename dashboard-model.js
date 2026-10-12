@@ -75,8 +75,8 @@
         `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${compact(r.date)}`,
         `DTEND;VALUE=DATE:${compact(next.toISOString().slice(0, 10))}`,
         `SUMMARY:${escape((names[r.symbol] || r.symbol) + ' 실적 발표 예정')}`,
-        `DESCRIPTION:${escape(`${r.symbol} · ${country} · 제공처 예정일 / 회사 IR 미확인. 일정은 변경될 수 있습니다.`)}`,
-        'STATUS:TENTATIVE', 'TRANSP:TRANSPARENT', 'END:VEVENT');
+        `DESCRIPTION:${escape(`${r.symbol} · ${country} · ${r.status === 'official_confirmed' ? '기업 공식 발표 확인' : '제공처 예정일 / 회사 IR 미확인'}. 일정은 변경될 수 있습니다. ${r.source_url || ''}`)}`,
+        r.status === 'official_confirmed' ? 'STATUS:CONFIRMED' : 'STATUS:TENTATIVE', 'TRANSP:TRANSPARENT', 'END:VEVENT');
     }
     lines.push('END:VCALENDAR');
     // RFC 5545 line folding counts UTF-8 octets, not JavaScript characters.

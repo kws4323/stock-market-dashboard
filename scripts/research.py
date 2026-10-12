@@ -1,6 +1,8 @@
 """Auditable static snapshots. Credentials are never written to published data."""
 import json
 import os
+import math
+import hashlib
 import re
 import time
 import urllib.request
@@ -18,7 +20,7 @@ def now():
 
 class Client:
     def __init__(self):
-        self.ua = os.getenv("SEC_USER_AGENT", "")
+        self.ua = os.getenv("SEC_USER_AGENT") or "StockDashBoard/1.0 (https://github.com/kws4323/stock-market-dashboard; contact: https://github.com/kws4323/stock-market-dashboard/issues)"
         self.key = os.getenv("FMP_API_KEY", "")
 
     def get(self, url, sec=False):
@@ -27,12 +29,24 @@ class Client:
         req = urllib.request.Request(url, headers={"User-Agent": self.ua if sec else "StockDashboard/1.0"})
         try:
             with urllib.request.urlopen(req, timeout=30) as response:
-                return response.read()
+                data = response.read(20 * 1024 * 1024 + 1)
+                if len(data) > 20 * 1024 * 1024:
+                    raise ValueError("Provider document exceeds size limit")
+                return data
         except Exception:
             # urllib exceptions can contain query credentials. Never log them.
             raise RuntimeError("Provider request failed; check access, quota and service status") from None
 
     def sec(self, url):
+        # Accession directories are immutable; submissions lists must stay live.
+        if url.startswith("https://www.sec.gov/Archives/edgar/data/"):
+            cache = ROOT / "work/sec-cache" / (hashlib.sha256(url.encode()).hexdigest() + ".bin")
+            if cache.exists():
+                return cache.read_bytes()
+            raw = self.get(url, True)
+            cache.parent.mkdir(parents=True, exist_ok=True)
+            cache.write_bytes(raw)
+            return raw
         return self.get(url, True)
 
     def fmp(self, endpoint, **params):
@@ -53,6 +67,7 @@ def parse_table(raw):
         rows.append({"cusip": fields["cusip"].upper(), "issuer": fields["nameOfIssuer"],
                      "class": fields.get("titleOfClass", ""), "option": fields.get("putCall", ""),
                      "unit": fields.get("sshPrnamtType", ""),
+                     "discretion": fields.get("investmentDiscretion", ""), "other_manager": fields.get("otherManager", ""),
                      "value": float(fields["value"]), "shares": float(fields["sshPrnamt"])})
     if not rows:
         raise ValueError("No 13F information table rows")
@@ -60,6 +75,8 @@ def parse_table(raw):
 
 
 def aggregate(rows, mappings):
+    if any(not math.isfinite(r[k]) or r[k] < 0 for r in rows for k in ("value", "shares")):
+        raise ValueError("Invalid portfolio numbers")
     total = sum(r["value"] for r in rows)
     if total <= 0:
         raise ValueError("Invalid portfolio value")
@@ -89,37 +106,87 @@ def changes(current, previous):
     return result
 
 
+def load_information_table(client, cik, filing):
+    accession = filing["accessionNumber"]
+    base = f'https://www.sec.gov/Archives/edgar/data/{int(cik)}/{accession.replace("-", "")}/'
+    primary = filing.get("primaryDocument", "").split("/")[-1]
+    if not primary:
+        raise ValueError("Amended filing or original missing primary document metadata")
+    header = ET.fromstring(client.sec(base + primary))
+    fields = {e.tag.split("}")[-1]: (e.text or "").strip() for e in header.iter()}
+    count = int(fields["tableEntryTotal"])
+    total = float(fields["tableValueTotal"])
+    listing = json.loads(client.sec(base + "index.json"))["directory"]["item"]
+    rows = []
+    for item in listing:
+        name = item["name"]
+        if name == primary or not name.lower().endswith(".xml"):
+            continue
+        raw = client.sec(base + name)
+        root = ET.fromstring(raw)
+        if root.tag.split("}")[-1] == "informationTable":
+            rows.extend(parse_table(raw))
+    if len(rows) != count or not math.isclose(sum(r["value"] for r in rows), total, abs_tol=max(1, count)):
+        raise ValueError("Incomplete 13F table: entry/value totals disagree with SEC cover page")
+    # Historical forms used thousands; normalize before combining amendments.
+    if filing["filingDate"] < "2023-01-03":
+        rows = [{**r, "value": r["value"] * 1000} for r in rows]
+    return {"rows": rows, "amendment_type": fields.get("amendmentType", "").upper(),
+            "source_url": base + accession + "-index.html", "filed_at": filing["filingDate"]}
+
+
+def combine_filings(filings):
+    rows, sources = [], []
+    for filing in filings:
+        kind = filing["amendment_type"]
+        if not kind or kind == "RESTATEMENT":
+            rows = filing["rows"]
+        elif kind == "NEW HOLDINGS":
+            identity = lambda r: tuple(r.get(k, "") for k in ("cusip", "class", "option", "unit", "discretion", "other_manager"))
+            known = {identity(r) for r in rows}
+            if any(identity(r) in known for r in filing["rows"]):
+                raise ValueError("Overlapping new-holdings amendment requires review")
+            rows = rows + filing["rows"]
+        else:
+            raise ValueError("Unknown amendment type; excluded from denominator")
+        sources.append(filing["source_url"])
+    return rows, sources
+
+
 def institution(client, manager, mappings):
     cik = manager["cik"]
     data = json.loads(client.sec(f"https://data.sec.gov/submissions/CIK{int(cik):010d}.json"))
     recent = data["filings"]["recent"]
-    filings = [{k: recent[k][i] for k in ("form", "reportDate", "filingDate", "accessionNumber")} for i in range(len(recent["form"])) if recent["form"][i] in ("13F-HR", "13F-HR/A")]
+    def extract(block):
+        return [{k: block[k][i] for k in ("form", "reportDate", "filingDate", "accessionNumber", "primaryDocument") if k in block}
+                for i in range(len(block["form"])) if block["form"][i] in ("13F-HR", "13F-HR/A")]
+    filings = extract(recent)
+    for archive in sorted(data["filings"].get("files", []), key=lambda a:a.get("filingTo", ""), reverse=True)[:3]:
+        if len({f["reportDate"] for f in filings if f["reportDate"]}) >= 2:
+            break
+        name = archive["name"]
+        if not re.fullmatch(r"CIK\d+-submissions-\d+\.json", name):
+            raise ValueError("Unexpected submissions archive name")
+        filings.extend(extract(json.loads(client.sec("https://data.sec.gov/submissions/" + name))))
     periods = sorted({f["reportDate"] for f in filings if f["reportDate"]}, reverse=True)[:2]
     if len(periods) < 2:
         raise ValueError("Two reporting quarters unavailable in recent submissions")
     snapshots = []
     for period in periods:
-        group = [f for f in filings if f["reportDate"] == period]
-        if any(f["form"].endswith("/A") for f in group):
-            raise ValueError("Amended filing requires reconciliation; excluded from denominator")
-        filing = max(group, key=lambda f: f["filingDate"])
-        base = f'https://www.sec.gov/Archives/edgar/data/{int(cik)}/{filing["accessionNumber"].replace("-", "")}/'
-        listing = json.loads(client.sec(base + "index.json"))["directory"]["item"]
-        rows = []
-        for item in listing:
-            name = item["name"]
-            if not name.lower().endswith(".xml"):
-                continue
-            raw = client.sec(base + name)
-            if b"infotable" in raw.lower():
-                rows.extend(parse_table(raw))
-        snapshots.append({"period": period, "filed_at": filing["filingDate"], "source_url": base + filing["accessionNumber"] + "-index.html", "holdings": aggregate(rows, mappings)})
+        group = sorted([f for f in filings if f["reportDate"] == period], key=lambda f:(f["filingDate"], f["accessionNumber"]))
+        if not group or group[0]["form"] != "13F-HR" or sum(f["form"] == "13F-HR" for f in group) != 1:
+            raise ValueError("Original 13F filing unavailable or ambiguous")
+        tables = [load_information_table(client, cik, filing) for filing in group]
+        if any(f["form"].endswith("/A") and not t["amendment_type"] for f,t in zip(group,tables)):
+            raise ValueError("Amended filing type unavailable")
+        rows, sources = combine_filings(tables)
+        snapshots.append({"period": period, "filed_at": tables[-1]["filed_at"], "source_url": tables[-1]["source_url"], "source_urls": sources, "holdings": aggregate(rows, mappings)})
     current, previous = snapshots
     # Share changes are only comparable across adjacent quarters.
     p, q = date.fromisoformat(current["period"]), date.fromisoformat(previous["period"])
     if (p.year * 4 + (p.month - 1) // 3) - (q.year * 4 + (q.month - 1) // 3) != 1:
         raise ValueError("Nonadjacent quarters")
-    return {**manager, "period": current["period"], "previous_period": previous["period"], "filed_at": current["filed_at"], "source_url": current["source_url"], "previous_source_url": previous["source_url"], "holdings": changes(current["holdings"], previous["holdings"])}
+    return {**manager, "period": current["period"], "previous_period": previous["period"], "filed_at": current["filed_at"], "source_url": current["source_url"], "source_urls":current["source_urls"], "previous_source_url": previous["source_url"], "holdings": changes(current["holdings"], previous["holdings"])}
 
 
 def news(rows):
@@ -196,7 +263,12 @@ def safe_manager(client, manager, mappings):
 if __name__ == "__main__":
     path = ROOT / "data/research.json"
     previous = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
-    result = collect(Client(), json.loads((ROOT / "config/tracking.json").read_text(encoding="utf-8")), previous)
+    config = json.loads((ROOT / "config/tracking.json").read_text(encoding="utf-8"))
+    if config.get("free_mode"):
+        from free_sources import collect_free
+        result = collect_free(Client(), config, previous)
+    else:
+        result = collect(Client(), config, previous)
     path.parent.mkdir(exist_ok=True)
     temporary = path.with_suffix(".tmp")
     temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
