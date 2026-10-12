@@ -92,7 +92,30 @@
     return lines.map(fold).join('\r\n') + '\r\n';
   }
 
-  const api = {holdingsSearch, filterMarkets, filterEarnings, toCSV, toICS, validDate};
+  function memberKey(r) {
+    return JSON.stringify([r.chamber || '', r.firstName || '', r.lastName || '']);
+  }
+  function filterTrades(rows, options = {}) {
+    const q = (options.query || '').trim().toUpperCase();
+    return rows.filter(r => (!options.member || memberKey(r) === options.member) &&
+      (!options.chamber || r.chamber === options.chamber) &&
+      (!options.type || (r.type || '').startsWith(options.type)) &&
+      (!options.owner || r.owner === options.owner) &&
+      (!options.from || (validDate(r.transactionDate) && r.transactionDate >= options.from)) &&
+      (!options.to || (validDate(r.transactionDate) && r.transactionDate <= options.to)) &&
+      (!q || `${r.firstName || ''} ${r.lastName || ''} ${r.symbol || ''} ${r.assetDescription || ''}`.toUpperCase().includes(q)))
+      .sort((a,b) => (b.transactionDate || '').localeCompare(a.transactionDate || ''));
+  }
+  function tradeComposition(rows) {
+    const grouped = new Map();
+    for (const r of rows) {
+      const name = r.symbol || r.assetDescription || '종목 미확인';
+      grouped.set(name, (grouped.get(name) || 0) + 1);
+    }
+    return [...grouped].map(([name,count]) => ({name,count,percent: count / rows.length * 100}))
+      .sort((a,b) => b.count - a.count || a.name.localeCompare(b.name));
+  }
+  const api = {holdingsSearch, filterMarkets, filterEarnings, toCSV, toICS, validDate, memberKey, filterTrades, tradeComposition};
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.DashboardModel = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

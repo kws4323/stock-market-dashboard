@@ -72,3 +72,6 @@ Setting `free_mode: false` retains the earlier subscription-based adapters. They
 - [House disclosures and use conditions](https://disclosures-clerk.house.gov/FinancialDisclosure/ViewSearch) / [Senate official search](https://efdsearch.senate.gov/search/)
 - [yfinance screener documentation](https://ranaroussi.github.io/yfinance/reference/api/yfinance.screen.html)
 - [Microsoft original earnings date announcement](https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69)
+
+### 의원별 거래 원그래프
+의원 선택, 종목 검색, 거래일 범위, 매수·매도 및 소유자 코드 필터를 함께 적용합니다. 원그래프의 분모는 **선택 조건에 맞는 수집 거래 행 수**, 분자는 해당 종목의 거래 행 수입니다. 최대 9개 종목과 기타를 표시하며 전체 종목 표와 원문 링크를 제공합니다. 거래 CSV에 신고 금액 범위, 원문, 페이지를 포함합니다. PTR만으로 현재 보유자산·정확한 금액·자산별 비중을 재구성하지 않습니다. 일부 최신 하원 문서만 수집하므로 의원 간 전체 거래량 비교나 투자 성과 평가에 적합하지 않습니다.
