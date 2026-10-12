@@ -25,11 +25,18 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python scripts/update.py
+      - run: python -m unittest discover -s tests -v
+      - name: Collect research snapshots
+        run: python scripts/research.py
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          FMP_PUBLIC_REDISTRIBUTION: ${{ vars.FMP_PUBLIC_REDISTRIBUTION }}
       - name: Commit updated snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/markets.json
+          git add data/markets.json data/research.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh market snapshot"
             git push

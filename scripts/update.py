@@ -30,12 +30,13 @@ for name, symbol in SYMBOLS.items():
         old = values[-2]["close"] if len(values) > 1 else None
         items.append({"name": name, "symbol": symbol, "close": latest,
                       "change_pct": round((latest / old - 1) * 100, 2) if old else None,
-                      "history": values, "source": "Yahoo Finance (unofficial)"})
+                      "history": values, "source": "Yahoo Finance (unofficial)",
+                      "status": "ok", "collected_at": datetime.now(timezone.utc).isoformat()})
         print(name, latest)
     except Exception as exc:
         print(f"WARNING {name}: {exc}")
-        items.append(previous.get(name, {"name": name, "symbol": symbol,
-                     "close": None, "change_pct": None, "history": []}))
+        items.append({**previous.get(name, {"name": name, "symbol": symbol,
+                     "close": None, "change_pct": None, "history": []}), "status": "stale"})
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(json.dumps({"updated_at": datetime.now(timezone.utc).isoformat(),
-                           "markets": items}, ensure_ascii=False, indent=2) + "\n")
+                           "markets": items}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

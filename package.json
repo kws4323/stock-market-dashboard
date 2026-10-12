@@ -1,0 +1,11 @@
+{
+  "name": "stock-market-dashboard",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/dashboard.test.cjs",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
