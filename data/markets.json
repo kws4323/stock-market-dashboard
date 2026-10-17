@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-16T23:43:59.448657+00:00",
+  "updated_at": "2026-10-17T07:11:34.960126+00:00",
   "markets": [
     {
       "name": "KOSPI",
       "symbol": "^KS11",
-      "close": 5554.2202,
-      "change_pct": -7.57,
+      "close": 5668.0498,
+      "change_pct": 2.05,
       "history": [
         {
           "date": "2026-10-01",
@@ -42,17 +42,21 @@
         {
           "date": "2026-10-15",
           "close": 5554.2202
+        },
+        {
+          "date": "2026-10-16",
+          "close": 5668.0498
         }
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:58.164179+00:00"
+      "collected_at": "2026-10-17T07:11:33.617011+00:00"
     },
     {
       "name": "KOSDAQ",
       "symbol": "^KQ11",
-      "close": 760.82,
-      "change_pct": -7.65,
+      "close": 794.78,
+      "change_pct": 4.46,
       "history": [
         {
           "date": "2026-10-01",
@@ -89,11 +93,15 @@
         {
           "date": "2026-10-15",
           "close": 760.82
+        },
+        {
+          "date": "2026-10-16",
+          "close": 794.78
         }
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:58.273810+00:00"
+      "collected_at": "2026-10-17T07:11:33.730463+00:00"
     },
     {
       "name": "S&P 500",
@@ -144,12 +152,12 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:58.387053+00:00"
+      "collected_at": "2026-10-17T07:11:33.861600+00:00"
     },
     {
       "name": "NASDAQ Composite",
       "symbol": "^IXIC",
-      "close": 26140.0332,
+      "close": 26140.0293,
       "change_pct": -2.15,
       "history": [
         {
@@ -190,12 +198,12 @@
         },
         {
           "date": "2026-10-16",
-          "close": 26140.0332
+          "close": 26140.0293
         }
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:58.547078+00:00"
+      "collected_at": "2026-10-17T07:11:33.978771+00:00"
     },
     {
       "name": "Russell 2000",
@@ -246,7 +254,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:58.659354+00:00"
+      "collected_at": "2026-10-17T07:11:34.090975+00:00"
     },
     {
       "name": "Dow Jones",
@@ -297,13 +305,13 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:58.772237+00:00"
+      "collected_at": "2026-10-17T07:11:34.203909+00:00"
     },
     {
       "name": "WTI",
       "symbol": "CL=F",
-      "close": 99.04,
-      "change_pct": 1.09,
+      "close": 101.41,
+      "change_pct": 3.51,
       "history": [
         {
           "date": "2026-10-06",
@@ -339,18 +347,18 @@
         },
         {
           "date": "2026-10-16",
-          "close": 99.04
+          "close": 101.41
         }
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:58.882177+00:00"
+      "collected_at": "2026-10-17T07:11:34.321411+00:00"
     },
     {
       "name": "Gold",
       "symbol": "GC=F",
-      "close": 4186.7002,
-      "change_pct": 0.4,
+      "close": 4181.1001,
+      "change_pct": 0.26,
       "history": [
         {
           "date": "2026-10-06",
@@ -386,12 +394,12 @@
         },
         {
           "date": "2026-10-16",
-          "close": 4186.7002
+          "close": 4181.1001
         }
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:59.001539+00:00"
+      "collected_at": "2026-10-17T07:11:34.449489+00:00"
     },
     {
       "name": "US 10Y Yield",
@@ -442,13 +450,13 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:59.115209+00:00"
+      "collected_at": "2026-10-17T07:11:34.570617+00:00"
     },
     {
       "name": "USD/KRW",
       "symbol": "KRW=X",
-      "close": 1334.2,
-      "change_pct": -0.5,
+      "close": 1329.6,
+      "change_pct": -0.85,
       "history": [
         {
           "date": "2026-10-05",
@@ -492,18 +500,18 @@
         },
         {
           "date": "2026-10-17",
-          "close": 1334.2
+          "close": 1329.6
         }
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:59.228496+00:00"
+      "collected_at": "2026-10-17T07:11:34.701184+00:00"
     },
     {
       "name": "Dollar Index",
       "symbol": "DX-Y.NYB",
-      "close": 101.779,
-      "change_pct": -0.22,
+      "close": 101.84,
+      "change_pct": -0.16,
       "history": [
         {
           "date": "2026-10-06",
@@ -539,12 +547,12 @@
         },
         {
           "date": "2026-10-16",
-          "close": 101.779
+          "close": 101.84
         }
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:59.337008+00:00"
+      "collected_at": "2026-10-17T07:11:34.836838+00:00"
     },
     {
       "name": "VIX",
@@ -595,7 +603,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-16T23:43:59.448609+00:00"
+      "collected_at": "2026-10-17T07:11:34.960044+00:00"
     }
   ]
 }
