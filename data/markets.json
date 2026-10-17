@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T07:11:34.960126+00:00",
+  "updated_at": "2026-10-17T12:50:43.839812+00:00",
   "markets": [
     {
       "name": "KOSPI",
@@ -50,7 +50,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:33.617011+00:00"
+      "collected_at": "2026-10-17T12:50:42.704796+00:00"
     },
     {
       "name": "KOSDAQ",
@@ -101,7 +101,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:33.730463+00:00"
+      "collected_at": "2026-10-17T12:50:42.801502+00:00"
     },
     {
       "name": "S&P 500",
@@ -152,7 +152,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:33.861600+00:00"
+      "collected_at": "2026-10-17T12:50:42.903553+00:00"
     },
     {
       "name": "NASDAQ Composite",
@@ -203,7 +203,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:33.978771+00:00"
+      "collected_at": "2026-10-17T12:50:43.003031+00:00"
     },
     {
       "name": "Russell 2000",
@@ -254,7 +254,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:34.090975+00:00"
+      "collected_at": "2026-10-17T12:50:43.108968+00:00"
     },
     {
       "name": "Dow Jones",
@@ -305,7 +305,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:34.203909+00:00"
+      "collected_at": "2026-10-17T12:50:43.214327+00:00"
     },
     {
       "name": "WTI",
@@ -352,7 +352,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:34.321411+00:00"
+      "collected_at": "2026-10-17T12:50:43.312605+00:00"
     },
     {
       "name": "Gold",
@@ -399,7 +399,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:34.449489+00:00"
+      "collected_at": "2026-10-17T12:50:43.419287+00:00"
     },
     {
       "name": "US 10Y Yield",
@@ -450,7 +450,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:34.570617+00:00"
+      "collected_at": "2026-10-17T12:50:43.524159+00:00"
     },
     {
       "name": "USD/KRW",
@@ -505,7 +505,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:34.701184+00:00"
+      "collected_at": "2026-10-17T12:50:43.636504+00:00"
     },
     {
       "name": "Dollar Index",
@@ -552,7 +552,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:34.836838+00:00"
+      "collected_at": "2026-10-17T12:50:43.743865+00:00"
     },
     {
       "name": "VIX",
@@ -603,7 +603,7 @@
       ],
       "source": "Yahoo Finance (unofficial)",
       "status": "ok",
-      "collected_at": "2026-10-17T07:11:34.960044+00:00"
+      "collected_at": "2026-10-17T12:50:43.839738+00:00"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "attempted_at": "2026-10-17T07:11:35.899819+00:00",
+  "attempted_at": "2026-10-17T12:50:44.678636+00:00",
   "mode": "free",
   "sections": {
     "institutions": {
       "status": "ok",
-      "updated_at": "2026-10-17T07:11:37.075543+00:00",
+      "updated_at": "2026-10-17T12:50:45.589066+00:00",
       "data": [
         {
           "name": "Berkshire Hathaway",
@@ -38,7 +38,7 @@
     },
     "market_news": {
       "status": "ok",
-      "updated_at": "2026-10-17T07:11:38.060379+00:00",
+      "updated_at": "2026-10-17T12:50:46.253389+00:00",
       "data": [
         {
           "title": "The AI behind Formula One race-day decisions",
@@ -52,7 +52,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763952+00:00",
+          "collected_at": "2026-10-17T12:50:46.040622+00:00",
           "stale": false
         },
         {
@@ -67,7 +67,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238094+00:00",
+          "collected_at": "2026-10-17T12:50:45.626762+00:00",
           "stale": false
         },
         {
@@ -82,7 +82,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763995+00:00",
+          "collected_at": "2026-10-17T12:50:46.040643+00:00",
           "stale": false
         },
         {
@@ -97,7 +97,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763997+00:00",
+          "collected_at": "2026-10-17T12:50:46.040645+00:00",
           "stale": false
         },
         {
@@ -112,7 +112,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060319+00:00",
+          "collected_at": "2026-10-17T12:50:46.253292+00:00",
           "stale": false
         },
         {
@@ -127,7 +127,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060323+00:00",
+          "collected_at": "2026-10-17T12:50:46.253315+00:00",
           "stale": false
         },
         {
@@ -142,7 +142,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763999+00:00",
+          "collected_at": "2026-10-17T12:50:46.040649+00:00",
           "stale": false
         },
         {
@@ -157,7 +157,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238100+00:00",
+          "collected_at": "2026-10-17T12:50:45.626769+00:00",
           "stale": false
         },
         {
@@ -172,7 +172,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.764001+00:00",
+          "collected_at": "2026-10-17T12:50:46.040653+00:00",
           "stale": false
         },
         {
@@ -187,7 +187,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594127+00:00",
+          "collected_at": "2026-10-17T12:50:45.922993+00:00",
           "stale": false
         },
         {
@@ -202,7 +202,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.764002+00:00",
+          "collected_at": "2026-10-17T12:50:46.040655+00:00",
           "stale": false
         },
         {
@@ -217,7 +217,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060327+00:00",
+          "collected_at": "2026-10-17T12:50:46.253323+00:00",
           "stale": false
         },
         {
@@ -232,7 +232,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060328+00:00",
+          "collected_at": "2026-10-17T12:50:46.253325+00:00",
           "stale": false
         },
         {
@@ -247,7 +247,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238102+00:00",
+          "collected_at": "2026-10-17T12:50:45.626772+00:00",
           "stale": false
         },
         {
@@ -262,7 +262,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060329+00:00",
+          "collected_at": "2026-10-17T12:50:46.253327+00:00",
           "stale": false
         },
         {
@@ -277,7 +277,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238103+00:00",
+          "collected_at": "2026-10-17T12:50:45.626774+00:00",
           "stale": false
         },
         {
@@ -292,7 +292,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238104+00:00",
+          "collected_at": "2026-10-17T12:50:45.626776+00:00",
           "stale": false
         },
         {
@@ -307,7 +307,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 경기·소비·무역 수치",
           "feed_id": "bea",
-          "collected_at": "2026-10-17T07:11:37.486271+00:00",
+          "collected_at": "2026-10-17T12:50:45.789912+00:00",
           "stale": false
         },
         {
@@ -322,7 +322,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238106+00:00",
+          "collected_at": "2026-10-17T12:50:45.626779+00:00",
           "stale": false
         },
         {
@@ -337,7 +337,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238107+00:00",
+          "collected_at": "2026-10-17T12:50:45.626781+00:00",
           "stale": false
         },
         {
@@ -352,7 +352,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238110+00:00",
+          "collected_at": "2026-10-17T12:50:45.626786+00:00",
           "stale": false
         },
         {
@@ -367,7 +367,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238111+00:00",
+          "collected_at": "2026-10-17T12:50:45.626788+00:00",
           "stale": false
         },
         {
@@ -382,7 +382,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238112+00:00",
+          "collected_at": "2026-10-17T12:50:45.626790+00:00",
           "stale": false
         },
         {
@@ -397,7 +397,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 물가 수치·통화정책 전망",
           "feed_id": "bea",
-          "collected_at": "2026-10-17T07:11:37.486275+00:00",
+          "collected_at": "2026-10-17T12:50:45.789918+00:00",
           "stale": false
         },
         {
@@ -412,7 +412,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238114+00:00",
+          "collected_at": "2026-10-17T12:50:45.626792+00:00",
           "stale": false
         },
         {
@@ -427,7 +427,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238115+00:00",
+          "collected_at": "2026-10-17T12:50:45.626794+00:00",
           "stale": false
         },
         {
@@ -442,7 +442,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238116+00:00",
+          "collected_at": "2026-10-17T12:50:45.626796+00:00",
           "stale": false
         },
         {
@@ -457,7 +457,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238117+00:00",
+          "collected_at": "2026-10-17T12:50:45.626798+00:00",
           "stale": false
         },
         {
@@ -472,7 +472,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 경기·소비·무역 수치",
           "feed_id": "bea",
-          "collected_at": "2026-10-17T07:11:37.486277+00:00",
+          "collected_at": "2026-10-17T12:50:45.789921+00:00",
           "stale": false
         },
         {
@@ -487,7 +487,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238118+00:00",
+          "collected_at": "2026-10-17T12:50:45.626799+00:00",
           "stale": false
         },
         {
@@ -502,7 +502,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238120+00:00",
+          "collected_at": "2026-10-17T12:50:45.626801+00:00",
           "stale": false
         },
         {
@@ -517,7 +517,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 정책금리·채권금리·환율",
           "feed_id": "fed",
-          "collected_at": "2026-10-17T07:11:37.238121+00:00",
+          "collected_at": "2026-10-17T12:50:45.626803+00:00",
           "stale": false
         }
       ],
@@ -528,7 +528,7 @@
     },
     "stock_news": {
       "status": "ok",
-      "updated_at": "2026-10-17T07:11:38.060389+00:00",
+      "updated_at": "2026-10-17T12:50:46.253402+00:00",
       "data": [
         {
           "title": "The AI behind Formula One race-day decisions",
@@ -542,7 +542,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763952+00:00",
+          "collected_at": "2026-10-17T12:50:46.040622+00:00",
           "stale": false
         },
         {
@@ -557,7 +557,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763978+00:00",
+          "collected_at": "2026-10-17T12:50:46.040628+00:00",
           "stale": false
         },
         {
@@ -572,7 +572,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060303+00:00",
+          "collected_at": "2026-10-17T12:50:46.253269+00:00",
           "stale": false
         },
         {
@@ -587,7 +587,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060309+00:00",
+          "collected_at": "2026-10-17T12:50:46.253276+00:00",
           "stale": false
         },
         {
@@ -602,7 +602,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060310+00:00",
+          "collected_at": "2026-10-17T12:50:46.253278+00:00",
           "stale": false
         },
         {
@@ -617,7 +617,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060312+00:00",
+          "collected_at": "2026-10-17T12:50:46.253280+00:00",
           "stale": false
         },
         {
@@ -632,7 +632,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060313+00:00",
+          "collected_at": "2026-10-17T12:50:46.253282+00:00",
           "stale": false
         },
         {
@@ -647,7 +647,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763980+00:00",
+          "collected_at": "2026-10-17T12:50:46.040631+00:00",
           "stale": false
         },
         {
@@ -662,7 +662,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763995+00:00",
+          "collected_at": "2026-10-17T12:50:46.040643+00:00",
           "stale": false
         },
         {
@@ -677,7 +677,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763997+00:00",
+          "collected_at": "2026-10-17T12:50:46.040645+00:00",
           "stale": false
         },
         {
@@ -692,7 +692,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060314+00:00",
+          "collected_at": "2026-10-17T12:50:46.253284+00:00",
           "stale": false
         },
         {
@@ -707,7 +707,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060315+00:00",
+          "collected_at": "2026-10-17T12:50:46.253286+00:00",
           "stale": false
         },
         {
@@ -722,7 +722,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594118+00:00",
+          "collected_at": "2026-10-17T12:50:45.922983+00:00",
           "stale": false
         },
         {
@@ -737,7 +737,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060317+00:00",
+          "collected_at": "2026-10-17T12:50:46.253288+00:00",
           "stale": false
         },
         {
@@ -752,7 +752,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060318+00:00",
+          "collected_at": "2026-10-17T12:50:46.253290+00:00",
           "stale": false
         },
         {
@@ -767,7 +767,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763998+00:00",
+          "collected_at": "2026-10-17T12:50:46.040647+00:00",
           "stale": false
         },
         {
@@ -782,7 +782,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594124+00:00",
+          "collected_at": "2026-10-17T12:50:45.922988+00:00",
           "stale": false
         },
         {
@@ -797,7 +797,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060319+00:00",
+          "collected_at": "2026-10-17T12:50:46.253292+00:00",
           "stale": false
         },
         {
@@ -812,7 +812,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060320+00:00",
+          "collected_at": "2026-10-17T12:50:46.253294+00:00",
           "stale": false
         },
         {
@@ -827,7 +827,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060322+00:00",
+          "collected_at": "2026-10-17T12:50:46.253296+00:00",
           "stale": false
         },
         {
@@ -842,7 +842,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060323+00:00",
+          "collected_at": "2026-10-17T12:50:46.253315+00:00",
           "stale": false
         },
         {
@@ -857,7 +857,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.763999+00:00",
+          "collected_at": "2026-10-17T12:50:46.040649+00:00",
           "stale": false
         },
         {
@@ -872,7 +872,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.764000+00:00",
+          "collected_at": "2026-10-17T12:50:46.040651+00:00",
           "stale": false
         },
         {
@@ -887,7 +887,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.764001+00:00",
+          "collected_at": "2026-10-17T12:50:46.040653+00:00",
           "stale": false
         },
         {
@@ -902,7 +902,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594125+00:00",
+          "collected_at": "2026-10-17T12:50:45.922991+00:00",
           "stale": false
         },
         {
@@ -917,7 +917,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594127+00:00",
+          "collected_at": "2026-10-17T12:50:45.922993+00:00",
           "stale": false
         },
         {
@@ -932,7 +932,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594128+00:00",
+          "collected_at": "2026-10-17T12:50:45.922996+00:00",
           "stale": false
         },
         {
@@ -947,7 +947,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594129+00:00",
+          "collected_at": "2026-10-17T12:50:45.922998+00:00",
           "stale": false
         },
         {
@@ -962,7 +962,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060324+00:00",
+          "collected_at": "2026-10-17T12:50:46.253317+00:00",
           "stale": false
         },
         {
@@ -977,7 +977,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060325+00:00",
+          "collected_at": "2026-10-17T12:50:46.253319+00:00",
           "stale": false
         },
         {
@@ -992,7 +992,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060326+00:00",
+          "collected_at": "2026-10-17T12:50:46.253321+00:00",
           "stale": false
         },
         {
@@ -1007,7 +1007,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "microsoft",
-          "collected_at": "2026-10-17T07:11:37.764002+00:00",
+          "collected_at": "2026-10-17T12:50:46.040655+00:00",
           "stale": false
         },
         {
@@ -1022,7 +1022,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060327+00:00",
+          "collected_at": "2026-10-17T12:50:46.253323+00:00",
           "stale": false
         },
         {
@@ -1037,7 +1037,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060328+00:00",
+          "collected_at": "2026-10-17T12:50:46.253325+00:00",
           "stale": false
         },
         {
@@ -1052,7 +1052,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594130+00:00",
+          "collected_at": "2026-10-17T12:50:45.923000+00:00",
           "stale": false
         },
         {
@@ -1067,7 +1067,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 제품·투자·수요",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060329+00:00",
+          "collected_at": "2026-10-17T12:50:46.253327+00:00",
           "stale": false
         },
         {
@@ -1082,7 +1082,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "nvidia",
-          "collected_at": "2026-10-17T07:11:38.060330+00:00",
+          "collected_at": "2026-10-17T12:50:46.253329+00:00",
           "stale": false
         },
         {
@@ -1097,7 +1097,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594133+00:00",
+          "collected_at": "2026-10-17T12:50:45.923006+00:00",
           "stale": false
         },
         {
@@ -1112,7 +1112,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594135+00:00",
+          "collected_at": "2026-10-17T12:50:45.923008+00:00",
           "stale": false
         },
         {
@@ -1127,7 +1127,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594136+00:00",
+          "collected_at": "2026-10-17T12:50:45.923010+00:00",
           "stale": false
         },
         {
@@ -1142,7 +1142,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594137+00:00",
+          "collected_at": "2026-10-17T12:50:45.923012+00:00",
           "stale": false
         },
         {
@@ -1157,7 +1157,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594139+00:00",
+          "collected_at": "2026-10-17T12:50:45.923014+00:00",
           "stale": false
         },
         {
@@ -1172,7 +1172,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594140+00:00",
+          "collected_at": "2026-10-17T12:50:45.923016+00:00",
           "stale": false
         },
         {
@@ -1187,7 +1187,7 @@
           "source_type": "official_rss",
           "watch_point": "확인 항목: 발표 내용·관련 기업",
           "feed_id": "apple",
-          "collected_at": "2026-10-17T07:11:37.594141+00:00",
+          "collected_at": "2026-10-17T12:50:45.923018+00:00",
           "stale": false
         }
       ],
@@ -1198,7 +1198,7 @@
     },
     "ptr": {
       "status": "ok",
-      "updated_at": "2026-10-17T07:11:39.739380+00:00",
+      "updated_at": "2026-10-17T12:50:54.777830+00:00",
       "data": [
         {
           "firstName": "David J.",
@@ -4223,7 +4223,7 @@
             "status": "parsed",
             "parsed_rows": 1,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:16.701311+00:00"
+            "checked_at": "2026-10-17T12:50:46.691400+00:00"
           },
           {
             "firstName": "Kevin",
@@ -4236,7 +4236,7 @@
             "status": "parsed",
             "parsed_rows": 24,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:17.984162+00:00"
+            "checked_at": "2026-10-17T12:50:47.845345+00:00"
           },
           {
             "firstName": "Rick",
@@ -4249,7 +4249,7 @@
             "status": "parsed",
             "parsed_rows": 4,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:18.410691+00:00"
+            "checked_at": "2026-10-17T12:50:48.208957+00:00"
           },
           {
             "firstName": "Gilbert",
@@ -4262,7 +4262,7 @@
             "status": "parsed",
             "parsed_rows": 55,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:20.924473+00:00"
+            "checked_at": "2026-10-17T12:50:50.653294+00:00"
           },
           {
             "firstName": "Lisa",
@@ -4275,7 +4275,7 @@
             "status": "parsed",
             "parsed_rows": 9,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:21.625671+00:00"
+            "checked_at": "2026-10-17T12:50:51.192773+00:00"
           },
           {
             "firstName": "Rohit",
@@ -4287,7 +4287,7 @@
             "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116376.pdf",
             "status": "not_current_member",
             "parsed_rows": 0,
-            "checked_at": "2026-10-16T07:31:22.131170+00:00"
+            "checked_at": "2026-10-17T12:50:51.424634+00:00"
           },
           {
             "firstName": "Josh",
@@ -4300,7 +4300,7 @@
             "status": "parsed",
             "parsed_rows": 2,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:22.568478+00:00"
+            "checked_at": "2026-10-17T12:50:51.724838+00:00"
           },
           {
             "firstName": "Maria Elvira",
@@ -4313,7 +4313,7 @@
             "status": "parsed",
             "parsed_rows": 41,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:24.370626+00:00"
+            "checked_at": "2026-10-17T12:50:53.365016+00:00"
           },
           {
             "firstName": "Lloyd",
@@ -4326,7 +4326,7 @@
             "status": "parsed",
             "parsed_rows": 4,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:24.881954+00:00"
+            "checked_at": "2026-10-17T12:50:53.730928+00:00"
           },
           {
             "firstName": "Vince",
@@ -4339,7 +4339,7 @@
             "status": "parsed",
             "parsed_rows": 1,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:25.191336+00:00"
+            "checked_at": "2026-10-17T12:50:53.988885+00:00"
           },
           {
             "firstName": "Tony",
@@ -4351,7 +4351,7 @@
             "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/9116361.pdf",
             "status": "not_current_member",
             "parsed_rows": 0,
-            "checked_at": "2026-10-16T07:31:25.391343+00:00"
+            "checked_at": "2026-10-17T12:50:54.159648+00:00"
           },
           {
             "firstName": "Michael",
@@ -4364,7 +4364,7 @@
             "status": "parsed",
             "parsed_rows": 3,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:25.802006+00:00"
+            "checked_at": "2026-10-17T12:50:54.518994+00:00"
           },
           {
             "firstName": "Nancy",
@@ -4377,21 +4377,21 @@
             "status": "parsed",
             "parsed_rows": 1,
             "rejected_rows": 0,
-            "checked_at": "2026-10-16T07:31:26.198254+00:00"
+            "checked_at": "2026-10-17T12:50:54.777436+00:00"
           }
         ],
         "senate_status": "manual_only",
         "coverage": "최근 하원 공시 일부 · 상원 미수집",
-        "collected_at": "2026-10-17T07:11:39.739215+00:00"
+        "collected_at": "2026-10-17T12:50:54.777657+00:00"
       }
     },
     "calendar": {
       "status": "ok",
-      "updated_at": "2026-10-17T07:11:41.174637+00:00",
+      "updated_at": "2026-10-17T12:50:56.145769+00:00",
       "data": {
         "from": "2026-10-17",
         "to": "2027-01-15",
-        "ranked_at": "2026-10-17T07:11:39.990836+00:00",
+        "ranked_at": "2026-10-17T12:50:55.158877+00:00",
         "source": "Yahoo Finance screener (unofficial)",
         "countries": {
           "KR": {
@@ -5111,7 +5111,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/042700.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400230+00:00"
+                "checked_at": "2026-10-17T12:50:55.533960+00:00"
               },
               {
                 "symbol": "005940.KS",
@@ -5121,7 +5121,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/005940.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400344+00:00"
+                "checked_at": "2026-10-17T12:50:55.534132+00:00"
               },
               {
                 "symbol": "010120.KS",
@@ -5131,7 +5131,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/010120.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400214+00:00"
+                "checked_at": "2026-10-17T12:50:55.533935+00:00"
               },
               {
                 "symbol": "267260.KS",
@@ -5141,7 +5141,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/267260.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400250+00:00"
+                "checked_at": "2026-10-17T12:50:55.533991+00:00"
               },
               {
                 "symbol": "000270.KS",
@@ -5151,7 +5151,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/000270.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400171+00:00"
+                "checked_at": "2026-10-17T12:50:55.533867+00:00"
               },
               {
                 "symbol": "064350.KS",
@@ -5161,7 +5161,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/064350.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400312+00:00"
+                "checked_at": "2026-10-17T12:50:55.534086+00:00"
               },
               {
                 "symbol": "005490.KS",
@@ -5171,7 +5171,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/005490.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400221+00:00"
+                "checked_at": "2026-10-17T12:50:55.533946+00:00"
               },
               {
                 "symbol": "042660.KS",
@@ -5181,7 +5181,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/042660.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400234+00:00"
+                "checked_at": "2026-10-17T12:50:55.533966+00:00"
               },
               {
                 "symbol": "000660.KS",
@@ -5191,7 +5191,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/000660.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400122+00:00"
+                "checked_at": "2026-10-17T12:50:55.533797+00:00"
               },
               {
                 "symbol": "028260.KS",
@@ -5201,7 +5201,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/028260.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400155+00:00"
+                "checked_at": "2026-10-17T12:50:55.533845+00:00"
               },
               {
                 "symbol": "055550.KS",
@@ -5211,7 +5211,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/055550.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400167+00:00"
+                "checked_at": "2026-10-17T12:50:55.533862+00:00"
               },
               {
                 "symbol": "086790.KS",
@@ -5221,7 +5221,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/086790.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400189+00:00"
+                "checked_at": "2026-10-17T12:50:55.533893+00:00"
               },
               {
                 "symbol": "207940.KS",
@@ -5231,7 +5231,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/207940.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400148+00:00"
+                "checked_at": "2026-10-17T12:50:55.533834+00:00"
               },
               {
                 "symbol": "005930.KS",
@@ -5241,7 +5241,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/005930.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400107+00:00"
+                "checked_at": "2026-10-17T12:50:55.533779+00:00"
               },
               {
                 "symbol": "066570.KS",
@@ -5251,7 +5251,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/066570.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400195+00:00"
+                "checked_at": "2026-10-17T12:50:55.533904+00:00"
               },
               {
                 "symbol": "000720.KS",
@@ -5261,7 +5261,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/000720.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400318+00:00"
+                "checked_at": "2026-10-17T12:50:55.534095+00:00"
               },
               {
                 "symbol": "005380.KS",
@@ -5271,7 +5271,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/005380.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400144+00:00"
+                "checked_at": "2026-10-17T12:50:55.533829+00:00"
               },
               {
                 "symbol": "006400.KS",
@@ -5281,7 +5281,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/006400.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400179+00:00"
+                "checked_at": "2026-10-17T12:50:55.533879+00:00"
               },
               {
                 "symbol": "009150.KS",
@@ -5291,7 +5291,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/009150.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400140+00:00"
+                "checked_at": "2026-10-17T12:50:55.533823+00:00"
               },
               {
                 "symbol": "009830.KS",
@@ -5301,7 +5301,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/009830.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400383+00:00"
+                "checked_at": "2026-10-17T12:50:55.534189+00:00"
               },
               {
                 "symbol": "011070.KS",
@@ -5311,7 +5311,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/011070.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400330+00:00"
+                "checked_at": "2026-10-17T12:50:55.534111+00:00"
               },
               {
                 "symbol": "018260.KS",
@@ -5321,7 +5321,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/018260.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400276+00:00"
+                "checked_at": "2026-10-17T12:50:55.534031+00:00"
               },
               {
                 "symbol": "024110.KS",
@@ -5331,7 +5331,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/024110.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400270+00:00"
+                "checked_at": "2026-10-17T12:50:55.534022+00:00"
               },
               {
                 "symbol": "051910.KS",
@@ -5341,7 +5341,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/051910.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400237+00:00"
+                "checked_at": "2026-10-17T12:50:55.533971+00:00"
               },
               {
                 "symbol": "068270.KS",
@@ -5351,7 +5351,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/068270.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400163+00:00"
+                "checked_at": "2026-10-17T12:50:55.533856+00:00"
               },
               {
                 "symbol": "086280.KS",
@@ -5361,7 +5361,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/086280.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400291+00:00"
+                "checked_at": "2026-10-17T12:50:55.534054+00:00"
               },
               {
                 "symbol": "090430.KS",
@@ -5371,7 +5371,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/090430.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400336+00:00"
+                "checked_at": "2026-10-17T12:50:55.534120+00:00"
               },
               {
                 "symbol": "096770.KS",
@@ -5381,7 +5381,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/096770.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400202+00:00"
+                "checked_at": "2026-10-17T12:50:55.533915+00:00"
               },
               {
                 "symbol": "105560.KS",
@@ -5391,7 +5391,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/105560.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400152+00:00"
+                "checked_at": "2026-10-17T12:50:55.533840+00:00"
               },
               {
                 "symbol": "128940.KS",
@@ -5401,7 +5401,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/128940.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400418+00:00"
+                "checked_at": "2026-10-17T12:50:55.534240+00:00"
               },
               {
                 "symbol": "175330.KS",
@@ -5411,7 +5411,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/175330.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400422+00:00"
+                "checked_at": "2026-10-17T12:50:55.534245+00:00"
               },
               {
                 "symbol": "241560.KS",
@@ -5421,7 +5421,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/241560.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400425+00:00"
+                "checked_at": "2026-10-17T12:50:55.534250+00:00"
               },
               {
                 "symbol": "329180.KS",
@@ -5431,7 +5431,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/329180.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400185+00:00"
+                "checked_at": "2026-10-17T12:50:55.533888+00:00"
               },
               {
                 "symbol": "012330.KS",
@@ -5441,7 +5441,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/012330.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400192+00:00"
+                "checked_at": "2026-10-17T12:50:55.533899+00:00"
               },
               {
                 "symbol": "012450.KS",
@@ -5451,7 +5451,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/012450.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400159+00:00"
+                "checked_at": "2026-10-17T12:50:55.533851+00:00"
               },
               {
                 "symbol": "247540.KQ",
@@ -5461,7 +5461,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/247540.KQ/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400321+00:00"
+                "checked_at": "2026-10-17T12:50:55.534100+00:00"
               },
               {
                 "symbol": "278470.KS",
@@ -5471,7 +5471,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/278470.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400297+00:00"
+                "checked_at": "2026-10-17T12:50:55.534063+00:00"
               },
               {
                 "symbol": "316140.KS",
@@ -5481,7 +5481,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/316140.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400217+00:00"
+                "checked_at": "2026-10-17T12:50:55.533940+00:00"
               },
               {
                 "symbol": "003670.KS",
@@ -5491,7 +5491,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/003670.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400279+00:00"
+                "checked_at": "2026-10-17T12:50:55.534037+00:00"
               },
               {
                 "symbol": "009540.KS",
@@ -5501,7 +5501,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/009540.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400247+00:00"
+                "checked_at": "2026-10-17T12:50:55.533985+00:00"
               },
               {
                 "symbol": "010950.KS",
@@ -5511,7 +5511,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/010950.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400256+00:00"
+                "checked_at": "2026-10-17T12:50:55.534000+00:00"
               },
               {
                 "symbol": "259960.KS",
@@ -5521,7 +5521,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/259960.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400360+00:00"
+                "checked_at": "2026-10-17T12:50:55.534155+00:00"
               },
               {
                 "symbol": "373220.KS",
@@ -5531,7 +5531,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/373220.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400136+00:00"
+                "checked_at": "2026-10-17T12:50:55.533817+00:00"
               },
               {
                 "symbol": "377300.KS",
@@ -5541,7 +5541,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/377300.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400429+00:00"
+                "checked_at": "2026-10-17T12:50:55.534256+00:00"
               },
               {
                 "symbol": "017670.KS",
@@ -5551,7 +5551,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/017670.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400261+00:00"
+                "checked_at": "2026-10-17T12:50:55.534008+00:00"
               },
               {
                 "symbol": "000880.KS",
@@ -5561,7 +5561,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/000880.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400379+00:00"
+                "checked_at": "2026-10-17T12:50:55.534183+00:00"
               },
               {
                 "symbol": "030200.KS",
@@ -5571,7 +5571,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/030200.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400300+00:00"
+                "checked_at": "2026-10-17T12:50:55.534069+00:00"
               },
               {
                 "symbol": "033780.KS",
@@ -5581,7 +5581,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/033780.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400241+00:00"
+                "checked_at": "2026-10-17T12:50:55.533977+00:00"
               },
               {
                 "symbol": "078930.KS",
@@ -5591,7 +5591,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/078930.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400354+00:00"
+                "checked_at": "2026-10-17T12:50:55.534146+00:00"
               },
               {
                 "symbol": "161390.KS",
@@ -5601,7 +5601,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/161390.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400368+00:00"
+                "checked_at": "2026-10-17T12:50:55.534166+00:00"
               },
               {
                 "symbol": "326030.KS",
@@ -5611,7 +5611,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/326030.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400404+00:00"
+                "checked_at": "2026-10-17T12:50:55.534219+00:00"
               },
               {
                 "symbol": "021240.KS",
@@ -5621,7 +5621,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/021240.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400371+00:00"
+                "checked_at": "2026-10-17T12:50:55.534171+00:00"
               },
               {
                 "symbol": "035420.KS",
@@ -5631,7 +5631,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/035420.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400199+00:00"
+                "checked_at": "2026-10-17T12:50:55.533910+00:00"
               },
               {
                 "symbol": "035720.KS",
@@ -5641,7 +5641,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/035720.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400287+00:00"
+                "checked_at": "2026-10-17T12:50:55.534049+00:00"
               },
               {
                 "symbol": "047040.KS",
@@ -5651,7 +5651,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/047040.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400397+00:00"
+                "checked_at": "2026-10-17T12:50:55.534208+00:00"
               },
               {
                 "symbol": "011200.KS",
@@ -5661,7 +5661,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/011200.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400225+00:00"
+                "checked_at": "2026-10-17T12:50:55.533952+00:00"
               },
               {
                 "symbol": "016360.KS",
@@ -5671,7 +5671,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/016360.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400387+00:00"
+                "checked_at": "2026-10-17T12:50:55.534195+00:00"
               },
               {
                 "symbol": "000810.KS",
@@ -5681,7 +5681,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/000810.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400207+00:00"
+                "checked_at": "2026-10-17T12:50:55.533921+00:00"
               },
               {
                 "symbol": "003550.KS",
@@ -5691,7 +5691,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/003550.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400267+00:00"
+                "checked_at": "2026-10-17T12:50:55.534017+00:00"
               },
               {
                 "symbol": "032830.KS",
@@ -5701,7 +5701,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/032830.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400175+00:00"
+                "checked_at": "2026-10-17T12:50:55.533873+00:00"
               },
               {
                 "symbol": "005830.KS",
@@ -5711,7 +5711,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/005830.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400308+00:00"
+                "checked_at": "2026-10-17T12:50:55.534080+00:00"
               },
               {
                 "symbol": "034730.KS",
@@ -5721,7 +5721,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/034730.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400210+00:00"
+                "checked_at": "2026-10-17T12:50:55.533929+00:00"
               },
               {
                 "symbol": "402340.KS",
@@ -5731,7 +5731,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/402340.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400131+00:00"
+                "checked_at": "2026-10-17T12:50:55.533806+00:00"
               },
               {
                 "symbol": "180640.KS",
@@ -5741,7 +5741,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/180640.KS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.400364+00:00"
+                "checked_at": "2026-10-17T12:50:55.534161+00:00"
               }
             ],
             "missing_schedule": [
@@ -5783,7 +5783,7 @@
               "443060.KS"
             ],
             "status": "ok",
-            "collected_at": "2026-10-17T07:11:40.400494+00:00"
+            "collected_at": "2026-10-17T12:50:55.534374+00:00"
           },
           "US": {
             "target": 300,
@@ -5928,7 +5928,7 @@
               {
                 "symbol": "ASML",
                 "name": "ASML Holding N.V.",
-                "market_cap": 630507831296,
+                "market_cap": 632670912512,
                 "currency": "USD",
                 "rank": 20
               },
@@ -7524,7 +7524,7 @@
               {
                 "symbol": "AMX",
                 "name": "América Móvil, S.A.B. de C.V.",
-                "market_cap": 68412694528,
+                "market_cap": 68410404864,
                 "currency": "USD",
                 "rank": 248
               },
@@ -7902,7 +7902,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/HDB/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947684+00:00"
+                "checked_at": "2026-10-17T12:50:56.027675+00:00"
               },
               {
                 "symbol": "IBN",
@@ -7912,7 +7912,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/IBN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947758+00:00"
+                "checked_at": "2026-10-17T12:50:56.027793+00:00"
               },
               {
                 "symbol": "AMX",
@@ -7922,7 +7922,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AMX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948102+00:00"
+                "checked_at": "2026-10-17T12:50:56.028351+00:00"
               },
               {
                 "symbol": "CB",
@@ -7932,7 +7932,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CB/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947622+00:00"
+                "checked_at": "2026-10-17T12:50:56.027576+00:00"
               },
               {
                 "symbol": "COF",
@@ -7942,7 +7942,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/COF/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947674+00:00"
+                "checked_at": "2026-10-17T12:50:56.027657+00:00"
               },
               {
                 "symbol": "GE",
@@ -7952,7 +7952,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947338+00:00"
+                "checked_at": "2026-10-17T12:50:56.027111+00:00"
               },
               {
                 "symbol": "GM",
@@ -7962,7 +7962,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948052+00:00"
+                "checked_at": "2026-10-17T12:50:56.028250+00:00"
               },
               {
                 "symbol": "ISRG",
@@ -7972,7 +7972,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ISRG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947581+00:00"
+                "checked_at": "2026-10-17T12:50:56.027514+00:00"
               },
               {
                 "symbol": "MMM",
@@ -7982,7 +7982,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MMM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947922+00:00"
+                "checked_at": "2026-10-17T12:50:56.028059+00:00"
               },
               {
                 "symbol": "NFLX",
@@ -7992,7 +7992,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NFLX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947360+00:00"
+                "checked_at": "2026-10-17T12:50:56.027146+00:00"
               },
               {
                 "symbol": "NOC",
@@ -8002,7 +8002,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NOC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948049+00:00"
+                "checked_at": "2026-10-17T12:50:56.028244+00:00"
               },
               {
                 "symbol": "RTX",
@@ -8012,7 +8012,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/RTX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947386+00:00"
+                "checked_at": "2026-10-17T12:50:56.027188+00:00"
               },
               {
                 "symbol": "SPCX",
@@ -8022,7 +8022,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SPCX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947230+00:00"
+                "checked_at": "2026-10-17T12:50:56.026941+00:00"
               },
               {
                 "symbol": "ABT",
@@ -8032,7 +8032,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ABT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947510+00:00"
+                "checked_at": "2026-10-17T12:50:56.027402+00:00"
               },
               {
                 "symbol": "CME",
@@ -8042,7 +8042,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CME/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947765+00:00"
+                "checked_at": "2026-10-17T12:50:56.027805+00:00"
               },
               {
                 "symbol": "CSX",
@@ -8052,7 +8052,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CSX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947863+00:00"
+                "checked_at": "2026-10-17T12:50:56.027964+00:00"
               },
               {
                 "symbol": "DHR",
@@ -8062,7 +8062,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DHR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947564+00:00"
+                "checked_at": "2026-10-17T12:50:56.027488+00:00"
               },
               {
                 "symbol": "ELV",
@@ -8072,7 +8072,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ELV/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947847+00:00"
+                "checked_at": "2026-10-17T12:50:56.027937+00:00"
               },
               {
                 "symbol": "IBM",
@@ -8082,7 +8082,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/IBM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947445+00:00"
+                "checked_at": "2026-10-17T12:50:56.027278+00:00"
               },
               {
                 "symbol": "KMI",
@@ -8092,7 +8092,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/KMI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948027+00:00"
+                "checked_at": "2026-10-17T12:50:56.028209+00:00"
               },
               {
                 "symbol": "LRCX",
@@ -8102,7 +8102,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/LRCX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947335+00:00"
+                "checked_at": "2026-10-17T12:50:56.027105+00:00"
               },
               {
                 "symbol": "MCO",
@@ -8112,7 +8112,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MCO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947934+00:00"
+                "checked_at": "2026-10-17T12:50:56.028077+00:00"
               },
               {
                 "symbol": "META",
@@ -8122,7 +8122,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/META/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947233+00:00"
+                "checked_at": "2026-10-17T12:50:56.026946+00:00"
               },
               {
                 "symbol": "NEE",
@@ -8132,7 +8132,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NEE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947553+00:00"
+                "checked_at": "2026-10-17T12:50:56.027471+00:00"
               },
               {
                 "symbol": "PM",
@@ -8142,7 +8142,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947349+00:00"
+                "checked_at": "2026-10-17T12:50:56.027129+00:00"
               },
               {
                 "symbol": "SAP",
@@ -8152,7 +8152,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SAP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947390+00:00"
+                "checked_at": "2026-10-17T12:50:56.027193+00:00"
               },
               {
                 "symbol": "T",
@@ -8162,7 +8162,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/T/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947568+00:00"
+                "checked_at": "2026-10-17T12:50:56.027494+00:00"
               },
               {
                 "symbol": "TMO",
@@ -8172,7 +8172,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TMO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947400+00:00"
+                "checked_at": "2026-10-17T12:50:56.027208+00:00"
               },
               {
                 "symbol": "TSLA",
@@ -8182,7 +8182,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TSLA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947241+00:00"
+                "checked_at": "2026-10-17T12:50:56.026958+00:00"
               },
               {
                 "symbol": "TXN",
@@ -8192,7 +8192,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TXN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947404+00:00"
+                "checked_at": "2026-10-17T12:50:56.027214+00:00"
               },
               {
                 "symbol": "URI",
@@ -8202,7 +8202,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/URI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948142+00:00"
+                "checked_at": "2026-10-17T12:50:56.028420+00:00"
               },
               {
                 "symbol": "BCS",
@@ -8212,7 +8212,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BCS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948034+00:00"
+                "checked_at": "2026-10-17T12:50:56.028221+00:00"
               },
               {
                 "symbol": "BE",
@@ -8222,7 +8222,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948130+00:00"
+                "checked_at": "2026-10-17T12:50:56.028398+00:00"
               },
               {
                 "symbol": "BX",
@@ -8232,7 +8232,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947642+00:00"
+                "checked_at": "2026-10-17T12:50:56.027607+00:00"
               },
               {
                 "symbol": "CMCSA",
@@ -8242,7 +8242,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CMCSA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948009+00:00"
+                "checked_at": "2026-10-17T12:50:56.028180+00:00"
               },
               {
                 "symbol": "HON",
@@ -8252,7 +8252,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/HON/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948111+00:00"
+                "checked_at": "2026-10-17T12:50:56.028365+00:00"
               },
               {
                 "symbol": "LMT",
@@ -8262,7 +8262,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/LMT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947646+00:00"
+                "checked_at": "2026-10-17T12:50:56.027613+00:00"
               },
               {
                 "symbol": "NEM",
@@ -8272,7 +8272,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NEM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947663+00:00"
+                "checked_at": "2026-10-17T12:50:56.027640+00:00"
               },
               {
                 "symbol": "NSC",
@@ -8282,7 +8282,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NSC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948063+00:00"
+                "checked_at": "2026-10-17T12:50:56.028268+00:00"
               },
               {
                 "symbol": "PG",
@@ -8292,7 +8292,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947317+00:00"
+                "checked_at": "2026-10-17T12:50:56.027076+00:00"
               },
               {
                 "symbol": "SCCO",
@@ -8302,7 +8302,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/SCCO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947538+00:00"
+                "checked_at": "2026-10-17T12:50:56.027447+00:00"
               },
               {
                 "symbol": "SPOT",
@@ -8312,7 +8312,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SPOT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947751+00:00"
+                "checked_at": "2026-10-17T12:50:56.027781+00:00"
               },
               {
                 "symbol": "UNP",
@@ -8322,7 +8322,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/UNP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947527+00:00"
+                "checked_at": "2026-10-17T12:50:56.027429+00:00"
               },
               {
                 "symbol": "VLO",
@@ -8332,7 +8332,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/VLO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947639+00:00"
+                "checked_at": "2026-10-17T12:50:56.027602+00:00"
               },
               {
                 "symbol": "WDC",
@@ -8342,7 +8342,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/WDC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947667+00:00"
+                "checked_at": "2026-10-17T12:50:56.027645+00:00"
               },
               {
                 "symbol": "AXP",
@@ -8352,7 +8352,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AXP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947452+00:00"
+                "checked_at": "2026-10-17T12:50:56.027289+00:00"
               },
               {
                 "symbol": "E",
@@ -8362,7 +8362,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/E/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947930+00:00"
+                "checked_at": "2026-10-17T12:50:56.028071+00:00"
               },
               {
                 "symbol": "SLB",
@@ -8372,7 +8372,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SLB/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948059+00:00"
+                "checked_at": "2026-10-17T12:50:56.028262+00:00"
               },
               {
                 "symbol": "CDNS",
@@ -8382,7 +8382,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CDNS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947895+00:00"
+                "checked_at": "2026-10-17T12:50:56.028014+00:00"
               },
               {
                 "symbol": "NUE",
@@ -8392,7 +8392,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NUE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948206+00:00"
+                "checked_at": "2026-10-17T12:50:56.028532+00:00"
               },
               {
                 "symbol": "PSA",
@@ -8402,7 +8402,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PSA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948239+00:00"
+                "checked_at": "2026-10-17T12:50:56.028591+00:00"
               },
               {
                 "symbol": "VZ",
@@ -8412,7 +8412,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/VZ/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947499+00:00"
+                "checked_at": "2026-10-17T12:50:56.027383+00:00"
               },
               {
                 "symbol": "WELL",
@@ -8422,7 +8422,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/WELL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947542+00:00"
+                "checked_at": "2026-10-17T12:50:56.027453+00:00"
               },
               {
                 "symbol": "AMT",
@@ -8432,7 +8432,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AMT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947919+00:00"
+                "checked_at": "2026-10-17T12:50:56.028053+00:00"
               },
               {
                 "symbol": "BA",
@@ -8442,7 +8442,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947585+00:00"
+                "checked_at": "2026-10-17T12:50:56.027520+00:00"
               },
               {
                 "symbol": "BKR",
@@ -8452,7 +8452,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BKR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948248+00:00"
+                "checked_at": "2026-10-17T12:50:56.028607+00:00"
               },
               {
                 "symbol": "ECL",
@@ -8462,7 +8462,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ECL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947979+00:00"
+                "checked_at": "2026-10-17T12:50:56.028133+00:00"
               },
               {
                 "symbol": "FCX",
@@ -8472,7 +8472,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/FCX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947796+00:00"
+                "checked_at": "2026-10-17T12:50:56.027855+00:00"
               },
               {
                 "symbol": "GLW",
@@ -8482,7 +8482,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GLW/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947725+00:00"
+                "checked_at": "2026-10-17T12:50:56.027740+00:00"
               },
               {
                 "symbol": "HCA",
@@ -8492,7 +8492,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/HCA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947800+00:00"
+                "checked_at": "2026-10-17T12:50:56.027860+00:00"
               },
               {
                 "symbol": "HLT",
@@ -8502,7 +8502,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/HLT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948012+00:00"
+                "checked_at": "2026-10-17T12:50:56.028186+00:00"
               },
               {
                 "symbol": "HOOD",
@@ -8512,7 +8512,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/HOOD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947880+00:00"
+                "checked_at": "2026-10-17T12:50:56.027991+00:00"
               },
               {
                 "symbol": "HSBC",
@@ -8522,7 +8522,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/HSBC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947345+00:00"
+                "checked_at": "2026-10-17T12:50:56.027123+00:00"
               },
               {
                 "symbol": "ITW",
@@ -8532,7 +8532,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ITW/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948016+00:00"
+                "checked_at": "2026-10-17T12:50:56.028192+00:00"
               },
               {
                 "symbol": "JCI",
@@ -8542,7 +8542,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/JCI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947891+00:00"
+                "checked_at": "2026-10-17T12:50:56.028009+00:00"
               },
               {
                 "symbol": "KO",
@@ -8552,7 +8552,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/KO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947310+00:00"
+                "checked_at": "2026-10-17T12:50:56.027064+00:00"
               },
               {
                 "symbol": "NVS",
@@ -8562,7 +8562,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NVS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947368+00:00"
+                "checked_at": "2026-10-17T12:50:56.027158+00:00"
               },
               {
                 "symbol": "NXPI",
@@ -8572,7 +8572,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NXPI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948212+00:00"
+                "checked_at": "2026-10-17T12:50:56.028543+00:00"
               },
               {
                 "symbol": "OKE",
@@ -8582,7 +8582,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/OKE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948198+00:00"
+                "checked_at": "2026-10-17T12:50:56.028518+00:00"
               },
               {
                 "symbol": "PCAR",
@@ -8592,7 +8592,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PCAR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948203+00:00"
+                "checked_at": "2026-10-17T12:50:56.028527+00:00"
               },
               {
                 "symbol": "RCL",
@@ -8602,7 +8602,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/RCL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948045+00:00"
+                "checked_at": "2026-10-17T12:50:56.028239+00:00"
               },
               {
                 "symbol": "SHW",
@@ -8612,7 +8612,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SHW/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947973+00:00"
+                "checked_at": "2026-10-17T12:50:56.028124+00:00"
               },
               {
                 "symbol": "SKHY",
@@ -8622,7 +8622,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/SKHY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947252+00:00"
+                "checked_at": "2026-10-17T12:50:56.026974+00:00"
               },
               {
                 "symbol": "SPGI",
@@ -8632,7 +8632,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SPGI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947656+00:00"
+                "checked_at": "2026-10-17T12:50:56.027628+00:00"
               },
               {
                 "symbol": "STX",
@@ -8642,7 +8642,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/STX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947599+00:00"
+                "checked_at": "2026-10-17T12:50:56.027541+00:00"
               },
               {
                 "symbol": "UPS",
@@ -8652,7 +8652,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/UPS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947937+00:00"
+                "checked_at": "2026-10-17T12:50:56.028083+00:00"
               },
               {
                 "symbol": "V",
@@ -8662,7 +8662,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/V/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947271+00:00"
+                "checked_at": "2026-10-17T12:50:56.027004+00:00"
               },
               {
                 "symbol": "WM",
@@ -8672,7 +8672,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/WM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947859+00:00"
+                "checked_at": "2026-10-17T12:50:56.027958+00:00"
               },
               {
                 "symbol": "ADP",
@@ -8682,7 +8682,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ADP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947721+00:00"
+                "checked_at": "2026-10-17T12:50:56.027734+00:00"
               },
               {
                 "symbol": "AEM",
@@ -8692,7 +8692,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AEM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947822+00:00"
+                "checked_at": "2026-10-17T12:50:56.027895+00:00"
               },
               {
                 "symbol": "AEP",
@@ -8702,7 +8702,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AEP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948099+00:00"
+                "checked_at": "2026-10-17T12:50:56.028346+00:00"
               },
               {
                 "symbol": "AON",
@@ -8712,7 +8712,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AON/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948167+00:00"
+                "checked_at": "2026-10-17T12:50:56.028463+00:00"
               },
               {
                 "symbol": "APH",
@@ -8722,7 +8722,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/APH/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947477+00:00"
+                "checked_at": "2026-10-17T12:50:56.027348+00:00"
               },
               {
                 "symbol": "BSX",
@@ -8732,7 +8732,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BSX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948136+00:00"
+                "checked_at": "2026-10-17T12:50:56.028409+00:00"
               },
               {
                 "symbol": "CP",
@@ -8742,7 +8742,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948020+00:00"
+                "checked_at": "2026-10-17T12:50:56.028198+00:00"
               },
               {
                 "symbol": "CVNA",
@@ -8752,7 +8752,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CVNA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948127+00:00"
+                "checked_at": "2026-10-17T12:50:56.028393+00:00"
               },
               {
                 "symbol": "DB",
@@ -8762,7 +8762,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DB/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948173+00:00"
+                "checked_at": "2026-10-17T12:50:56.028474+00:00"
               },
               {
                 "symbol": "EBAY",
@@ -8772,7 +8772,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/EBAY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948260+00:00"
+                "checked_at": "2026-10-17T12:50:56.028629+00:00"
               },
               {
                 "symbol": "EQIX",
@@ -8782,7 +8782,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/EQIX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947811+00:00"
+                "checked_at": "2026-10-17T12:50:56.027878+00:00"
               },
               {
                 "symbol": "EQNR",
@@ -8792,7 +8792,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/EQNR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947736+00:00"
+                "checked_at": "2026-10-17T12:50:56.027758+00:00"
               },
               {
                 "symbol": "FDX",
@@ -8802,7 +8802,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/FDX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948093+00:00"
+                "checked_at": "2026-10-17T12:50:56.028335+00:00"
               },
               {
                 "symbol": "FTNT",
@@ -8812,7 +8812,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/FTNT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947670+00:00"
+                "checked_at": "2026-10-17T12:50:56.027651+00:00"
               },
               {
                 "symbol": "GEV",
@@ -8822,7 +8822,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GEV/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947415+00:00"
+                "checked_at": "2026-10-17T12:50:56.027232+00:00"
               },
               {
                 "symbol": "GOOGL",
@@ -8832,7 +8832,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GOOGL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947214+00:00"
+                "checked_at": "2026-10-17T12:50:56.026915+00:00"
               },
               {
                 "symbol": "GRMN",
@@ -8842,7 +8842,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GRMN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948254+00:00"
+                "checked_at": "2026-10-17T12:50:56.028618+00:00"
               },
               {
                 "symbol": "GSK",
@@ -8852,7 +8852,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GSK/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947803+00:00"
+                "checked_at": "2026-10-17T12:50:56.027866+00:00"
               },
               {
                 "symbol": "KLAC",
@@ -8862,7 +8862,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/KLAC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947448+00:00"
+                "checked_at": "2026-10-17T12:50:56.027283+00:00"
               },
               {
                 "symbol": "MSFT",
@@ -8870,7 +8870,7 @@
                 "status": "official_confirmed",
                 "source_url": "https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69",
                 "source": "Company official announcement",
-                "checked_at": "2026-10-17T07:11:41.173970+00:00"
+                "checked_at": "2026-10-17T12:50:56.144977+00:00"
               },
               {
                 "symbol": "NOW",
@@ -8880,7 +8880,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NOW/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947592+00:00"
+                "checked_at": "2026-10-17T12:50:56.027529+00:00"
               },
               {
                 "symbol": "ORLY",
@@ -8890,7 +8890,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ORLY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948077+00:00"
+                "checked_at": "2026-10-17T12:50:56.028294+00:00"
               },
               {
                 "symbol": "PSX",
@@ -8900,7 +8900,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PSX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947705+00:00"
+                "checked_at": "2026-10-17T12:50:56.027708+00:00"
               },
               {
                 "symbol": "SAN",
@@ -8910,7 +8910,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SAN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947485+00:00"
+                "checked_at": "2026-10-17T12:50:56.027359+00:00"
               },
               {
                 "symbol": "TEL",
@@ -8920,7 +8920,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TEL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948170+00:00"
+                "checked_at": "2026-10-17T12:50:56.028469+00:00"
               },
               {
                 "symbol": "TMUS",
@@ -8930,7 +8930,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TMUS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947534+00:00"
+                "checked_at": "2026-10-17T12:50:56.027441+00:00"
               },
               {
                 "symbol": "UBS",
@@ -8940,7 +8940,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/UBS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947596+00:00"
+                "checked_at": "2026-10-17T12:50:56.027535+00:00"
               },
               {
                 "symbol": "VRT",
@@ -8950,7 +8950,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/VRT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947998+00:00"
+                "checked_at": "2026-10-17T12:50:56.028162+00:00"
               },
               {
                 "symbol": "AJG",
@@ -8960,7 +8960,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AJG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948123+00:00"
+                "checked_at": "2026-10-17T12:50:56.028387+00:00"
               },
               {
                 "symbol": "AMZN",
@@ -8970,7 +8970,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AMZN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947222+00:00"
+                "checked_at": "2026-10-17T12:50:56.026928+00:00"
               },
               {
                 "symbol": "ASX",
@@ -8980,7 +8980,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ASX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947908+00:00"
+                "checked_at": "2026-10-17T12:50:56.028035+00:00"
               },
               {
                 "symbol": "BBVA",
@@ -8990,7 +8990,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BBVA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947613+00:00"
+                "checked_at": "2026-10-17T12:50:56.027562+00:00"
               },
               {
                 "symbol": "BMY",
@@ -9000,7 +9000,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BMY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947690+00:00"
+                "checked_at": "2026-10-17T12:50:56.027684+00:00"
               },
               {
                 "symbol": "BUD",
@@ -9010,7 +9010,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BUD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947556+00:00"
+                "checked_at": "2026-10-17T12:50:56.027476+00:00"
               },
               {
                 "symbol": "CAT",
@@ -9020,7 +9020,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CAT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947331+00:00"
+                "checked_at": "2026-10-17T12:50:56.027100+00:00"
               },
               {
                 "symbol": "CRH",
@@ -9030,7 +9030,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CRH/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948242+00:00"
+                "checked_at": "2026-10-17T12:50:56.028596+00:00"
               },
               {
                 "symbol": "CVE",
@@ -9040,7 +9040,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/CVE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948179+00:00"
+                "checked_at": "2026-10-17T12:50:56.028486+00:00"
               },
               {
                 "symbol": "DLR",
@@ -9050,7 +9050,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DLR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948117+00:00"
+                "checked_at": "2026-10-17T12:50:56.028376+00:00"
               },
               {
                 "symbol": "EPD",
@@ -9060,7 +9060,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/EPD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947994+00:00"
+                "checked_at": "2026-10-17T12:50:56.028156+00:00"
               },
               {
                 "symbol": "GILD",
@@ -9070,7 +9070,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GILD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947481+00:00"
+                "checked_at": "2026-10-17T12:50:56.027354+00:00"
               },
               {
                 "symbol": "HWM",
@@ -9080,7 +9080,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/HWM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947887+00:00"
+                "checked_at": "2026-10-17T12:50:56.028003+00:00"
               },
               {
                 "symbol": "ICE",
@@ -9090,7 +9090,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ICE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947856+00:00"
+                "checked_at": "2026-10-17T12:50:56.027952+00:00"
               },
               {
                 "symbol": "ING",
@@ -9100,7 +9100,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ING/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947829+00:00"
+                "checked_at": "2026-10-17T12:50:56.027907+00:00"
               },
               {
                 "symbol": "INTC",
@@ -9110,7 +9110,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/INTC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947291+00:00"
+                "checked_at": "2026-10-17T12:50:56.027034+00:00"
               },
               {
                 "symbol": "LIN",
@@ -9120,7 +9120,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/LIN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947430+00:00"
+                "checked_at": "2026-10-17T12:50:56.027255+00:00"
               },
               {
                 "symbol": "LLY",
@@ -9130,7 +9130,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/LLY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947248+00:00"
+                "checked_at": "2026-10-17T12:50:56.026968+00:00"
               },
               {
                 "symbol": "LNG",
@@ -9140,7 +9140,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/LNG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948186+00:00"
+                "checked_at": "2026-10-17T12:50:56.028497+00:00"
               },
               {
                 "symbol": "LYG",
@@ -9150,7 +9150,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/LYG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948002+00:00"
+                "checked_at": "2026-10-17T12:50:56.028169+00:00"
               },
               {
                 "symbol": "MA",
@@ -9160,7 +9160,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947283+00:00"
+                "checked_at": "2026-10-17T12:50:56.027022+00:00"
               },
               {
                 "symbol": "MDLZ",
@@ -9170,7 +9170,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MDLZ/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947956+00:00"
+                "checked_at": "2026-10-17T12:50:56.028113+00:00"
               },
               {
                 "symbol": "MO",
@@ -9180,7 +9180,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947660+00:00"
+                "checked_at": "2026-10-17T12:50:56.027634+00:00"
               },
               {
                 "symbol": "MPWR",
@@ -9190,7 +9190,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MPWR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948189+00:00"
+                "checked_at": "2026-10-17T12:50:56.028502+00:00"
               },
               {
                 "symbol": "MRK",
@@ -9200,7 +9200,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MRK/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947325+00:00"
+                "checked_at": "2026-10-17T12:50:56.027088+00:00"
               },
               {
                 "symbol": "MSTR",
@@ -9210,7 +9210,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MSTR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948209+00:00"
+                "checked_at": "2026-10-17T12:50:56.028538+00:00"
               },
               {
                 "symbol": "PWR",
@@ -9220,7 +9220,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PWR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947833+00:00"
+                "checked_at": "2026-10-17T12:50:56.027914+00:00"
               },
               {
                 "symbol": "RSG",
@@ -9230,7 +9230,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/RSG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948081+00:00"
+                "checked_at": "2026-10-17T12:50:56.028313+00:00"
               },
               {
                 "symbol": "SBUX",
@@ -9240,7 +9240,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SBUX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947740+00:00"
+                "checked_at": "2026-10-17T12:50:56.027764+00:00"
               },
               {
                 "symbol": "SHEL",
@@ -9250,7 +9250,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SHEL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947356+00:00"
+                "checked_at": "2026-10-17T12:50:56.027141+00:00"
               },
               {
                 "symbol": "SNDK",
@@ -9260,7 +9260,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SNDK/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947495+00:00"
+                "checked_at": "2026-10-17T12:50:56.027377+00:00"
               },
               {
                 "symbol": "SYK",
@@ -9270,7 +9270,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SYK/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947728+00:00"
+                "checked_at": "2026-10-17T12:50:56.027746+00:00"
               },
               {
                 "symbol": "TAK",
@@ -9280,7 +9280,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TAK/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948155+00:00"
+                "checked_at": "2026-10-17T12:50:56.028441+00:00"
               },
               {
                 "symbol": "TT",
@@ -9290,7 +9290,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947792+00:00"
+                "checked_at": "2026-10-17T12:50:56.027849+00:00"
               },
               {
                 "symbol": "TTE",
@@ -9300,7 +9300,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TTE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947465+00:00"
+                "checked_at": "2026-10-17T12:50:56.027330+00:00"
               },
               {
                 "symbol": "VALE",
@@ -9310,7 +9310,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/VALE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948245+00:00"
+                "checked_at": "2026-10-17T12:50:56.028602+00:00"
               },
               {
                 "symbol": "ABBV",
@@ -9320,7 +9320,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ABBV/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947287+00:00"
+                "checked_at": "2026-10-17T12:50:56.027029+00:00"
               },
               {
                 "symbol": "AZN",
@@ -9330,7 +9330,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AZN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947396+00:00"
+                "checked_at": "2026-10-17T12:50:56.027202+00:00"
               },
               {
                 "symbol": "BP",
@@ -9340,7 +9340,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947632+00:00"
+                "checked_at": "2026-10-17T12:50:56.027592+00:00"
               },
               {
                 "symbol": "CL",
@@ -9350,7 +9350,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948038+00:00"
+                "checked_at": "2026-10-17T12:50:56.028227+00:00"
               },
               {
                 "symbol": "CNI",
@@ -9360,7 +9360,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CNI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948056+00:00"
+                "checked_at": "2026-10-17T12:50:56.028256+00:00"
               },
               {
                 "symbol": "CVX",
@@ -9370,7 +9370,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CVX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947299+00:00"
+                "checked_at": "2026-10-17T12:50:56.027046+00:00"
               },
               {
                 "symbol": "D",
@@ -9380,7 +9380,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/D/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948233+00:00"
+                "checked_at": "2026-10-17T12:50:56.028580+00:00"
               },
               {
                 "symbol": "GD",
@@ -9390,7 +9390,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947840+00:00"
+                "checked_at": "2026-10-17T12:50:56.027925+00:00"
               },
               {
                 "symbol": "NWG",
@@ -9400,7 +9400,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NWG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948096+00:00"
+                "checked_at": "2026-10-17T12:50:56.028341+00:00"
               },
               {
                 "symbol": "REGN",
@@ -9410,7 +9410,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/REGN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947969+00:00"
+                "checked_at": "2026-10-17T12:50:56.028118+00:00"
               },
               {
                 "symbol": "SNY",
@@ -9420,7 +9420,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SNY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947807+00:00"
+                "checked_at": "2026-10-17T12:50:56.027872+00:00"
               },
               {
                 "symbol": "XOM",
@@ -9430,7 +9430,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/XOM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947275+00:00"
+                "checked_at": "2026-10-17T12:50:56.027010+00:00"
               },
               {
                 "symbol": "AAPL",
@@ -9440,7 +9440,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AAPL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947209+00:00"
+                "checked_at": "2026-10-17T12:50:56.026907+00:00"
               },
               {
                 "symbol": "FANG",
@@ -9450,7 +9450,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/FANG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948220+00:00"
+                "checked_at": "2026-10-17T12:50:56.028557+00:00"
               },
               {
                 "symbol": "MAR",
@@ -9460,7 +9460,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MAR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947788+00:00"
+                "checked_at": "2026-10-17T12:50:56.027842+00:00"
               },
               {
                 "symbol": "PLTR",
@@ -9470,7 +9470,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PLTR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947295+00:00"
+                "checked_at": "2026-10-17T12:50:56.027040+00:00"
               },
               {
                 "symbol": "VRTX",
@@ -9480,7 +9480,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/VRTX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947652+00:00"
+                "checked_at": "2026-10-17T12:50:56.027622+00:00"
               },
               {
                 "symbol": "WMB",
@@ -9490,7 +9490,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/WMB/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947898+00:00"
+                "checked_at": "2026-10-17T12:50:56.028020+00:00"
               },
               {
                 "symbol": "AMD",
@@ -9500,7 +9500,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AMD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947267+00:00"
+                "checked_at": "2026-10-17T12:50:56.026998+00:00"
               },
               {
                 "symbol": "AME",
@@ -9510,7 +9510,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AME/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948224+00:00"
+                "checked_at": "2026-10-17T12:50:56.028563+00:00"
               },
               {
                 "symbol": "AMGN",
@@ -9520,7 +9520,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AMGN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947423+00:00"
+                "checked_at": "2026-10-17T12:50:56.027243+00:00"
               },
               {
                 "symbol": "ANET",
@@ -9530,7 +9530,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ANET/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947437+00:00"
+                "checked_at": "2026-10-17T12:50:56.027266+00:00"
               },
               {
                 "symbol": "APO",
@@ -9540,7 +9540,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/APO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948121+00:00"
+                "checked_at": "2026-10-17T12:50:56.028382+00:00"
               },
               {
                 "symbol": "BKNG",
@@ -9550,7 +9550,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BKNG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947678+00:00"
+                "checked_at": "2026-10-17T12:50:56.027663+00:00"
               },
               {
                 "symbol": "ETN",
@@ -9560,7 +9560,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/ETN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947577+00:00"
+                "checked_at": "2026-10-17T12:50:56.027508+00:00"
               },
               {
                 "symbol": "ITUB",
@@ -9570,7 +9570,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ITUB/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947776+00:00"
+                "checked_at": "2026-10-17T12:50:56.027823+00:00"
               },
               {
                 "symbol": "MPC",
@@ -9580,7 +9580,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MPC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947628+00:00"
+                "checked_at": "2026-10-17T12:50:56.027581+00:00"
               },
               {
                 "symbol": "MPLX",
@@ -9590,7 +9590,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MPLX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948192+00:00"
+                "checked_at": "2026-10-17T12:50:56.028508+00:00"
               },
               {
                 "symbol": "PFE",
@@ -9600,7 +9600,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PFE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947545+00:00"
+                "checked_at": "2026-10-17T12:50:56.027459+00:00"
               },
               {
                 "symbol": "RACE",
@@ -9610,7 +9610,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/RACE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948090+00:00"
+                "checked_at": "2026-10-17T12:50:56.028330+00:00"
               },
               {
                 "symbol": "SHOP",
@@ -9620,7 +9620,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SHOP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947441+00:00"
+                "checked_at": "2026-10-17T12:50:56.027272+00:00"
               },
               {
                 "symbol": "SU",
@@ -9630,7 +9630,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/SU/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947851+00:00"
+                "checked_at": "2026-10-17T12:50:56.027943+00:00"
               },
               {
                 "symbol": "AFL",
@@ -9640,7 +9640,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AFL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948182+00:00"
+                "checked_at": "2026-10-17T12:50:56.028491+00:00"
               },
               {
                 "symbol": "ALL",
@@ -9650,7 +9650,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ALL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948158+00:00"
+                "checked_at": "2026-10-17T12:50:56.028447+00:00"
               },
               {
                 "symbol": "APP",
@@ -9660,7 +9660,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/APP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947876+00:00"
+                "checked_at": "2026-10-17T12:50:56.027985+00:00"
               },
               {
                 "symbol": "ARM",
@@ -9670,7 +9670,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ARM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947419+00:00"
+                "checked_at": "2026-10-17T12:50:56.027237+00:00"
               },
               {
                 "symbol": "COR",
@@ -9680,7 +9680,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/COR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948133+00:00"
+                "checked_at": "2026-10-17T12:50:56.028404+00:00"
               },
               {
                 "symbol": "CVS",
@@ -9690,7 +9690,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CVS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947701+00:00"
+                "checked_at": "2026-10-17T12:50:56.027702+00:00"
               },
               {
                 "symbol": "DASH",
@@ -9700,7 +9700,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DASH/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947945+00:00"
+                "checked_at": "2026-10-17T12:50:56.028095+00:00"
               },
               {
                 "symbol": "DDOG",
@@ -9710,7 +9710,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DDOG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947884+00:00"
+                "checked_at": "2026-10-17T12:50:56.027997+00:00"
               },
               {
                 "symbol": "EMR",
@@ -9720,7 +9720,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/EMR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947867+00:00"
+                "checked_at": "2026-10-17T12:50:56.027970+00:00"
               },
               {
                 "symbol": "GWW",
@@ -9730,7 +9730,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/GWW/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948161+00:00"
+                "checked_at": "2026-10-17T12:50:56.028452+00:00"
               },
               {
                 "symbol": "MCD",
@@ -9740,7 +9740,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MCD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947523+00:00"
+                "checked_at": "2026-10-17T12:50:56.027423+00:00"
               },
               {
                 "symbol": "MCK",
@@ -9750,7 +9750,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MCK/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947710+00:00"
+                "checked_at": "2026-10-17T12:50:56.027713+00:00"
               },
               {
                 "symbol": "MELI",
@@ -9760,7 +9760,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MELI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947844+00:00"
+                "checked_at": "2026-10-17T12:50:56.027931+00:00"
               },
               {
                 "symbol": "MET",
@@ -9770,7 +9770,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MET/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948145+00:00"
+                "checked_at": "2026-10-17T12:50:56.028425+00:00"
               },
               {
                 "symbol": "MFC",
@@ -9780,7 +9780,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MFC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948066+00:00"
+                "checked_at": "2026-10-17T12:50:56.028273+00:00"
               },
               {
                 "symbol": "NVO",
@@ -9790,7 +9790,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NVO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947530+00:00"
+                "checked_at": "2026-10-17T12:50:56.027435+00:00"
               },
               {
                 "symbol": "QCOM",
@@ -9800,7 +9800,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/QCOM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947506+00:00"
+                "checked_at": "2026-10-17T12:50:56.027396+00:00"
               },
               {
                 "symbol": "SRE",
@@ -9810,7 +9810,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SRE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948257+00:00"
+                "checked_at": "2026-10-17T12:50:56.028623+00:00"
               },
               {
                 "symbol": "UBER",
@@ -9820,7 +9820,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/UBER/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947607+00:00"
+                "checked_at": "2026-10-17T12:50:56.027552+00:00"
               },
               {
                 "symbol": "ABNB",
@@ -9830,7 +9830,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ABNB/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947780+00:00"
+                "checked_at": "2026-10-17T12:50:56.027829+00:00"
               },
               {
                 "symbol": "APD",
@@ -9840,7 +9840,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/APD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948114+00:00"
+                "checked_at": "2026-10-17T12:50:56.028371+00:00"
               },
               {
                 "symbol": "CAH",
@@ -9850,7 +9850,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CAH/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948195+00:00"
+                "checked_at": "2026-10-17T12:50:56.028513+00:00"
               },
               {
                 "symbol": "CI",
@@ -9860,7 +9860,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947987+00:00"
+                "checked_at": "2026-10-17T12:50:56.028145+00:00"
               },
               {
                 "symbol": "CMI",
@@ -9870,7 +9870,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CMI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948071+00:00"
+                "checked_at": "2026-10-17T12:50:56.028283+00:00"
               },
               {
                 "symbol": "CNQ",
@@ -9880,7 +9880,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CNQ/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947743+00:00"
+                "checked_at": "2026-10-17T12:50:56.027769+00:00"
               },
               {
                 "symbol": "COP",
@@ -9890,7 +9890,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/COP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947516+00:00"
+                "checked_at": "2026-10-17T12:50:56.027411+00:00"
               },
               {
                 "symbol": "DUK",
@@ -9900,7 +9900,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DUK/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947837+00:00"
+                "checked_at": "2026-10-17T12:50:56.027920+00:00"
               },
               {
                 "symbol": "DVN",
@@ -9910,7 +9910,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DVN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948236+00:00"
+                "checked_at": "2026-10-17T12:50:56.028585+00:00"
               },
               {
                 "symbol": "EOG",
@@ -9920,7 +9920,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/EOG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947941+00:00"
+                "checked_at": "2026-10-17T12:50:56.028089+00:00"
               },
               {
                 "symbol": "LITE",
@@ -9930,7 +9930,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/LITE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948041+00:00"
+                "checked_at": "2026-10-17T12:50:56.028233+00:00"
               },
               {
                 "symbol": "MNST",
@@ -9940,7 +9940,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MNST/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947873+00:00"
+                "checked_at": "2026-10-17T12:50:56.027979+00:00"
               },
               {
                 "symbol": "MSI",
@@ -9950,7 +9950,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/MSI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948023+00:00"
+                "checked_at": "2026-10-17T12:50:56.028204+00:00"
               },
               {
                 "symbol": "NET",
@@ -9960,7 +9960,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NET/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947768+00:00"
+                "checked_at": "2026-10-17T12:50:56.027811+00:00"
               },
               {
                 "symbol": "NGG",
@@ -9970,7 +9970,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NGG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947952+00:00"
+                "checked_at": "2026-10-17T12:50:56.028107+00:00"
               },
               {
                 "symbol": "NTRA",
@@ -9980,7 +9980,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/NTRA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948227+00:00"
+                "checked_at": "2026-10-17T12:50:56.028568+00:00"
               },
               {
                 "symbol": "PH",
@@ -9990,7 +9990,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/PH/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947694+00:00"
+                "checked_at": "2026-10-17T12:50:56.027690+00:00"
               },
               {
                 "symbol": "SO",
@@ -10000,7 +10000,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947772+00:00"
+                "checked_at": "2026-10-17T12:50:56.027817+00:00"
               },
               {
                 "symbol": "SONY",
@@ -10010,7 +10010,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SONY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947603+00:00"
+                "checked_at": "2026-10-17T12:50:56.027547+00:00"
               },
               {
                 "symbol": "SPG",
@@ -10020,7 +10020,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SPG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948005+00:00"
+                "checked_at": "2026-10-17T12:50:56.028174+00:00"
               },
               {
                 "symbol": "TDG",
@@ -10030,7 +10030,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/TDG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948151+00:00"
+                "checked_at": "2026-10-17T12:50:56.028436+00:00"
               },
               {
                 "symbol": "TM",
@@ -10040,7 +10040,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947434+00:00"
+                "checked_at": "2026-10-17T12:50:56.027260+00:00"
               },
               {
                 "symbol": "TRGP",
@@ -10050,7 +10050,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TRGP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948148+00:00"
+                "checked_at": "2026-10-17T12:50:56.028430+00:00"
               },
               {
                 "symbol": "TRP",
@@ -10060,7 +10060,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TRP/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948139+00:00"
+                "checked_at": "2026-10-17T12:50:56.028414+00:00"
               },
               {
                 "symbol": "WPM",
@@ -10070,7 +10070,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/WPM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948176+00:00"
+                "checked_at": "2026-10-17T12:50:56.028480+00:00"
               },
               {
                 "symbol": "BAM",
@@ -10080,7 +10080,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BAM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948074+00:00"
+                "checked_at": "2026-10-17T12:50:56.028288+00:00"
               },
               {
                 "symbol": "ENB",
@@ -10090,7 +10090,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ENB/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947761+00:00"
+                "checked_at": "2026-10-17T12:50:56.027799+00:00"
               },
               {
                 "symbol": "MRNA",
@@ -10100,7 +10100,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MRNA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947904+00:00"
+                "checked_at": "2026-10-17T12:50:56.028030+00:00"
               },
               {
                 "symbol": "BRK-B",
@@ -10110,7 +10110,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/BRK-B/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947244+00:00"
+                "checked_at": "2026-10-17T12:50:56.026963+00:00"
               },
               {
                 "symbol": "B",
@@ -10120,7 +10120,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/B/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948107+00:00"
+                "checked_at": "2026-10-17T12:50:56.028360+00:00"
               },
               {
                 "symbol": "CEG",
@@ -10130,7 +10130,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CEG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947818+00:00"
+                "checked_at": "2026-10-17T12:50:56.027889+00:00"
               },
               {
                 "symbol": "KKR",
@@ -10140,7 +10140,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/KKR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947990+00:00"
+                "checked_at": "2026-10-17T12:50:56.028151+00:00"
               },
               {
                 "symbol": "OXY",
@@ -10150,7 +10150,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/OXY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948164+00:00"
+                "checked_at": "2026-10-17T12:50:56.028458+00:00"
               },
               {
                 "symbol": "PBR",
@@ -10160,7 +10160,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PBR/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947549+00:00"
+                "checked_at": "2026-10-17T12:50:56.027465+00:00"
               },
               {
                 "symbol": "SE",
@@ -10170,7 +10170,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/SE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948217+00:00"
+                "checked_at": "2026-10-17T12:50:56.028552+00:00"
               },
               {
                 "symbol": "AMAT",
@@ -10180,7 +10180,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AMAT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947342+00:00"
+                "checked_at": "2026-10-17T12:50:56.027117+00:00"
               },
               {
                 "symbol": "BN",
@@ -10190,7 +10190,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947948+00:00"
+                "checked_at": "2026-10-17T12:50:56.028101+00:00"
               },
               {
                 "symbol": "CSCO",
@@ -10200,7 +10200,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CSCO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947306+00:00"
+                "checked_at": "2026-10-17T12:50:56.027058+00:00"
               },
               {
                 "symbol": "NU",
@@ -10210,7 +10210,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NU/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948084+00:00"
+                "checked_at": "2026-10-17T12:50:56.028319+00:00"
               },
               {
                 "symbol": "SMFG",
@@ -10220,7 +10220,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/SMFG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947573+00:00"
+                "checked_at": "2026-10-17T12:50:56.027502+00:00"
               },
               {
                 "symbol": "MFG",
@@ -10230,7 +10230,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MFG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947681+00:00"
+                "checked_at": "2026-10-17T12:50:56.027669+00:00"
               },
               {
                 "symbol": "MUFG",
@@ -10240,7 +10240,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/MUFG/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947412+00:00"
+                "checked_at": "2026-10-17T12:50:56.027226+00:00"
               },
               {
                 "symbol": "DIS",
@@ -10250,7 +10250,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DIS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947492+00:00"
+                "checked_at": "2026-10-17T12:50:56.027371+00:00"
               },
               {
                 "symbol": "HD",
@@ -10260,7 +10260,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/HD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947353+00:00"
+                "checked_at": "2026-10-17T12:50:56.027135+00:00"
               },
               {
                 "symbol": "MDT",
@@ -10270,7 +10270,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/MDT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947698+00:00"
+                "checked_at": "2026-10-17T12:50:56.027696+00:00"
               },
               {
                 "symbol": "NVDA",
@@ -10280,7 +10280,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NVDA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947195+00:00"
+                "checked_at": "2026-10-17T12:50:56.026891+00:00"
               },
               {
                 "symbol": "LOW",
@@ -10290,7 +10290,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/LOW/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947747+00:00"
+                "checked_at": "2026-10-17T12:50:56.027775+00:00"
               },
               {
                 "symbol": "PDD",
@@ -10300,7 +10300,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/PDD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947718+00:00"
+                "checked_at": "2026-10-17T12:50:56.027727+00:00"
               },
               {
                 "symbol": "TGT",
@@ -10310,7 +10310,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TGT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948087+00:00"
+                "checked_at": "2026-10-17T12:50:56.028324+00:00"
               },
               {
                 "symbol": "TJX",
@@ -10320,7 +10320,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TJX/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947560+00:00"
+                "checked_at": "2026-10-17T12:50:56.027482+00:00"
               },
               {
                 "symbol": "INTU",
@@ -10330,7 +10330,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/INTU/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947911+00:00"
+                "checked_at": "2026-10-17T12:50:56.028042+00:00"
               },
               {
                 "symbol": "NTES",
@@ -10340,7 +10340,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/NTES/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947983+00:00"
+                "checked_at": "2026-10-17T12:50:56.028139+00:00"
               },
               {
                 "symbol": "PANW",
@@ -10350,7 +10350,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/PANW/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947375+00:00"
+                "checked_at": "2026-10-17T12:50:56.027170+00:00"
               },
               {
                 "symbol": "ROST",
@@ -10360,7 +10360,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/ROST/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948031+00:00"
+                "checked_at": "2026-10-17T12:50:56.028215+00:00"
               },
               {
                 "symbol": "WMT",
@@ -10370,7 +10370,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/WMT/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947259+00:00"
+                "checked_at": "2026-10-17T12:50:56.026986+00:00"
               },
               {
                 "symbol": "ADI",
@@ -10380,7 +10380,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ADI/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947488+00:00"
+                "checked_at": "2026-10-17T12:50:56.027365+00:00"
               },
               {
                 "symbol": "BABA",
@@ -10390,7 +10390,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/BABA/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947383+00:00"
+                "checked_at": "2026-10-17T12:50:56.027181+00:00"
               },
               {
                 "symbol": "KEYS",
@@ -10400,7 +10400,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/KEYS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948230+00:00"
+                "checked_at": "2026-10-17T12:50:56.028574+00:00"
               },
               {
                 "symbol": "DE",
@@ -10410,7 +10410,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/DE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947520+00:00"
+                "checked_at": "2026-10-17T12:50:56.027417+00:00"
               },
               {
                 "symbol": "DELL",
@@ -10420,7 +10420,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/DELL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947364+00:00"
+                "checked_at": "2026-10-17T12:50:56.027152+00:00"
               },
               {
                 "symbol": "CRWD",
@@ -10430,7 +10430,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CRWD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947426+00:00"
+                "checked_at": "2026-10-17T12:50:56.027249+00:00"
               },
               {
                 "symbol": "MRVL",
@@ -10440,7 +10440,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/MRVL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947461+00:00"
+                "checked_at": "2026-10-17T12:50:56.027324+00:00"
               },
               {
                 "symbol": "BMO",
@@ -10450,7 +10450,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BMO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947714+00:00"
+                "checked_at": "2026-10-17T12:50:56.027721+00:00"
               },
               {
                 "symbol": "BNS",
@@ -10460,7 +10460,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BNS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947732+00:00"
+                "checked_at": "2026-10-17T12:50:56.027752+00:00"
               },
               {
                 "symbol": "CRM",
@@ -10470,7 +10470,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/CRM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947469+00:00"
+                "checked_at": "2026-10-17T12:50:56.027336+00:00"
               },
               {
                 "symbol": "SNOW",
@@ -10480,7 +10480,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/SNOW/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947755+00:00"
+                "checked_at": "2026-10-17T12:50:56.027787+00:00"
               },
               {
                 "symbol": "CM",
@@ -10490,7 +10490,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/CM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947784+00:00"
+                "checked_at": "2026-10-17T12:50:56.027836+00:00"
               },
               {
                 "symbol": "RY",
@@ -10500,7 +10500,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/RY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947379+00:00"
+                "checked_at": "2026-10-17T12:50:56.027176+00:00"
               },
               {
                 "symbol": "TD",
@@ -10510,7 +10510,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/TD/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947473+00:00"
+                "checked_at": "2026-10-17T12:50:56.027342+00:00"
               },
               {
                 "symbol": "ADBE",
@@ -10520,7 +10520,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ADBE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947825+00:00"
+                "checked_at": "2026-10-17T12:50:56.027901+00:00"
               },
               {
                 "symbol": "AVGO",
@@ -10530,7 +10530,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/AVGO/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947237+00:00"
+                "checked_at": "2026-10-17T12:50:56.026952+00:00"
               },
               {
                 "symbol": "COST",
@@ -10540,7 +10540,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/COST/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947302+00:00"
+                "checked_at": "2026-10-17T12:50:56.027052+00:00"
               },
               {
                 "symbol": "ORCL",
@@ -10550,7 +10550,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ORCL/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947313+00:00"
+                "checked_at": "2026-10-17T12:50:56.027070+00:00"
               },
               {
                 "symbol": "ACN",
@@ -10560,7 +10560,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/ACN/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947618+00:00"
+                "checked_at": "2026-10-17T12:50:56.027570+00:00"
               },
               {
                 "symbol": "CTAS",
@@ -10570,7 +10570,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/CTAS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947926+00:00"
+                "checked_at": "2026-10-17T12:50:56.028065+00:00"
               },
               {
                 "symbol": "NKE",
@@ -10580,7 +10580,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/NKE/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.948251+00:00"
+                "checked_at": "2026-10-17T12:50:56.028612+00:00"
               },
               {
                 "symbol": "MU",
@@ -10590,7 +10590,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/MU/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947255+00:00"
+                "checked_at": "2026-10-17T12:50:56.026980+00:00"
               },
               {
                 "symbol": "UNH",
@@ -10600,7 +10600,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/UNH/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947321+00:00"
+                "checked_at": "2026-10-17T12:50:56.027082+00:00"
               },
               {
                 "symbol": "BLK",
@@ -10610,7 +10610,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/BLK/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947503+00:00"
+                "checked_at": "2026-10-17T12:50:56.027390+00:00"
               },
               {
                 "symbol": "C",
@@ -10620,7 +10620,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/C/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947458+00:00"
+                "checked_at": "2026-10-17T12:50:56.027316+00:00"
               },
               {
                 "symbol": "JPM",
@@ -10630,7 +10630,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/JPM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947263+00:00"
+                "checked_at": "2026-10-17T12:50:56.026992+00:00"
               },
               {
                 "symbol": "MS",
@@ -10640,7 +10640,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/MS/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947372+00:00"
+                "checked_at": "2026-10-17T12:50:56.027164+00:00"
               },
               {
                 "symbol": "TSM",
@@ -10650,7 +10650,7 @@
                 "provider_estimated": true,
                 "source_url": "https://finance.yahoo.com/quote/TSM/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947226+00:00"
+                "checked_at": "2026-10-17T12:50:56.026935+00:00"
               },
               {
                 "symbol": "WFC",
@@ -10660,7 +10660,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/WFC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947408+00:00"
+                "checked_at": "2026-10-17T12:50:56.027220+00:00"
               },
               {
                 "symbol": "BAC",
@@ -10670,7 +10670,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BAC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947328+00:00"
+                "checked_at": "2026-10-17T12:50:56.027094+00:00"
               },
               {
                 "symbol": "BNY",
@@ -10680,7 +10680,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/BNY/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947814+00:00"
+                "checked_at": "2026-10-17T12:50:56.027884+00:00"
               },
               {
                 "symbol": "PNC",
@@ -10690,7 +10690,7 @@
                 "provider_estimated": false,
                 "source_url": "https://finance.yahoo.com/quote/PNC/calendar/",
                 "source": "Yahoo Finance (unofficial)",
-                "checked_at": "2026-10-17T07:11:40.947915+00:00"
+                "checked_at": "2026-10-17T12:50:56.028048+00:00"
               }
             ],
             "missing_schedule": [
@@ -10716,7 +10716,7 @@
               "USB"
             ],
             "status": "ok",
-            "collected_at": "2026-10-17T07:11:41.174178+00:00"
+            "collected_at": "2026-10-17T12:50:56.145201+00:00"
           }
         }
       },
@@ -10731,35 +10731,35 @@
       "url": "https://www.federalreserve.gov/feeds/press_all.xml",
       "status": "ok",
       "count": 17,
-      "collected_at": "2026-10-17T07:11:37.238125+00:00"
+      "collected_at": "2026-10-17T12:50:45.626809+00:00"
     },
     {
       "name": "U.S. Bureau of Economic Analysis",
       "url": "https://apps.bea.gov/rss/rss.xml",
       "status": "ok",
       "count": 3,
-      "collected_at": "2026-10-17T07:11:37.486279+00:00"
+      "collected_at": "2026-10-17T12:50:45.789925+00:00"
     },
     {
       "name": "Apple Newsroom",
       "url": "https://www.apple.com/newsroom/rss-feed.rss",
       "status": "ok",
       "count": 14,
-      "collected_at": "2026-10-17T07:11:37.594143+00:00"
+      "collected_at": "2026-10-17T12:50:45.923020+00:00"
     },
     {
       "name": "Microsoft Source",
       "url": "https://news.microsoft.com/source/feed/",
       "status": "ok",
       "count": 10,
-      "collected_at": "2026-10-17T07:11:37.764005+00:00"
+      "collected_at": "2026-10-17T12:50:46.040658+00:00"
     },
     {
       "name": "NVIDIA Newsroom",
       "url": "https://nvidianews.nvidia.com/releases.xml",
       "status": "ok",
       "count": 20,
-      "collected_at": "2026-10-17T07:11:38.060333+00:00"
+      "collected_at": "2026-10-17T12:50:46.253332+00:00"
     }
   ]
 }
