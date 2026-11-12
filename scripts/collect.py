@@ -15,9 +15,15 @@ def finite(value):
     except (TypeError, ValueError):
         return None
 
+def epoch_seconds(value, fallback):
+    if hasattr(value, "timestamp"):
+        return int(value.timestamp())
+    number = finite(value)
+    return int(number) if number is not None else int(fallback)
+
 def collect(symbol):
     ticker = yf.Ticker(symbol)
-    history = ticker.history(period="1y", interval="1d", auto_adjust=False, raise_errors=True)
+    history = ticker.history(period="1y", interval="1d", auto_adjust=False)
     if history.empty:
         raise ValueError("Empty price history")
     meta = ticker.get_history_metadata() or {}
@@ -32,7 +38,7 @@ def collect(symbol):
     previous = finite(meta.get("previousClose")) or finite(meta.get("regularMarketPreviousClose")) or points[-2]["p"]
     return {"symbol": symbol, "source": "Yahoo Finance via yfinance", "retrieved": datetime.now(timezone.utc).isoformat(),
             "meta": {"regularMarketPrice": price, "previousClose": previous,
-                     "regularMarketTime": meta.get("regularMarketTime") or points[-1]["t"] // 1000,
+                     "regularMarketTime": epoch_seconds(meta.get("regularMarketTime"), points[-1]["t"] // 1000),
                      "currency": meta.get("currency", "")}, "points": points}
 
 def main():
