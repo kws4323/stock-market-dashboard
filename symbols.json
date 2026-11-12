@@ -1,0 +1,154 @@
+[
+  {
+    "symbol": "^KS11",
+    "name": "KOSPI"
+  },
+  {
+    "symbol": "^KQ11",
+    "name": "KOSDAQ"
+  },
+  {
+    "symbol": "^GSPC",
+    "name": "S&P 500"
+  },
+  {
+    "symbol": "^IXIC",
+    "name": "NASDAQ"
+  },
+  {
+    "symbol": "^DJI",
+    "name": "Dow Jones"
+  },
+  {
+    "symbol": "^RUT",
+    "name": "Russell 2000"
+  },
+  {
+    "symbol": "KRW=X",
+    "name": "USD / KRW"
+  },
+  {
+    "symbol": "^VIX",
+    "name": "VIX"
+  },
+  {
+    "symbol": "GC=F",
+    "name": "Gold"
+  },
+  {
+    "symbol": "CL=F",
+    "name": "WTI"
+  },
+  {
+    "symbol": "^TNX",
+    "name": "미국 10년물"
+  },
+  {
+    "symbol": "DX-Y.NYB",
+    "name": "달러 인덱스"
+  },
+  {
+    "symbol": "005930.KS",
+    "name": "삼성전자"
+  },
+  {
+    "symbol": "000660.KS",
+    "name": "SK하이닉스"
+  },
+  {
+    "symbol": "034020.KS",
+    "name": "두산에너빌리티"
+  },
+  {
+    "symbol": "042660.KS",
+    "name": "한화오션"
+  },
+  {
+    "symbol": "278470.KS",
+    "name": "에이피알"
+  },
+  {
+    "symbol": "373220.KS",
+    "name": "LG에너지솔루션"
+  },
+  {
+    "symbol": "207940.KS",
+    "name": "삼성바이오로직스"
+  },
+  {
+    "symbol": "009150.KS",
+    "name": "삼성전기"
+  },
+  {
+    "symbol": "005380.KS",
+    "name": "현대차"
+  },
+  {
+    "symbol": "105560.KS",
+    "name": "KB금융"
+  },
+  {
+    "symbol": "006400.KS",
+    "name": "삼성SDI"
+  },
+  {
+    "symbol": "012450.KS",
+    "name": "한화에어로스페이스"
+  },
+  {
+    "symbol": "033780.KS",
+    "name": "KT&G"
+  },
+  {
+    "symbol": "010120.KS",
+    "name": "LS ELECTRIC"
+  },
+  {
+    "symbol": "180640.KS",
+    "name": "한진칼"
+  },
+  {
+    "symbol": "NVDA",
+    "name": "엔비디아"
+  },
+  {
+    "symbol": "MSFT",
+    "name": "마이크로소프트"
+  },
+  {
+    "symbol": "AAPL",
+    "name": "애플"
+  },
+  {
+    "symbol": "AMZN",
+    "name": "아마존"
+  },
+  {
+    "symbol": "GOOGL",
+    "name": "알파벳"
+  },
+  {
+    "symbol": "META",
+    "name": "메타"
+  },
+  {
+    "symbol": "TSLA",
+    "name": "테슬라"
+  },
+  {
+    "symbol": "AVGO",
+    "name": "브로드컴"
+  },
+  {
+    "symbol": "AMD",
+    "name": "AMD"
+  },
+  {
+    "symbol": "SPY",
+    "name": "S&P 500 ETF"
+  },
+  {
+    "symbol": "QQQ",
+    "name": "NASDAQ 100 ETF"
+  }
+]
