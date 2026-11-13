@@ -38,6 +38,7 @@ jobs:
         run: |
           python scripts/test_institutions.py
           python scripts/institutions.py
+          python scripts/inspect_gpif.py || true
       - name: Preserve daily investor history
         run: |
           git config user.name 'github-actions[bot]'

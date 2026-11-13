@@ -78,7 +78,12 @@ def filing(cik, f):
     for doc in tables:
         r, v = parse_table(doc, f['filingDate']); rows.extend(r); value += v
     factor = 1000 if f['filingDate'] < '2023-01-03' else 1
-    if value != int(tag(primary,'tableValueTotal')) * factor: raise ValueError('SEC total mismatch')
+    expected = int(tag(primary,'tableValueTotal')) * factor
+    # Independently rounded rows can differ from a rounded aggregate by <= 0.5 per row.
+    tolerance = (int(tag(primary,'tableEntryTotal')) + 1) * factor / 2
+    if abs(value-expected) > tolerance:
+        raise ValueError(f'SEC total mismatch: rows={value}, summary={expected}, tolerance={tolerance}, accession={f["accessionNumber"]}')
+    if value != expected: print('Rounding difference',cik,value-expected,flush=True)
     return rows, tag(primary,'amendmentType'), base + f['accessionNumber'] + '-index.html'
 
 def collect(cik, old):
@@ -114,7 +119,7 @@ def main():
         prior = next((x for x in old['institutions'] if x['id']==id), {})
         item = {'id':id,'name':name,'group':group,'cik':cik,'scope':scope,'frequency':'분기' if cik else '연간·수시','url':f'https://www.sec.gov/edgar/browse/?CIK={cik}' if cik else LINKS[id], 'reports':prior.get('reports',[]), 'status':'unconnected'}
         if cik:
-            if prior.get('checked')==today:
+            if prior.get('checked')==today and prior.get('collectorVersion')==2:
                 item.update({k:prior[k] for k in ('checked','status','error') if k in prior})
             else:
                 try:
@@ -124,6 +129,7 @@ def main():
                     print(name, type(e).__name__, str(e)[:160], flush=True)
                 item['checked']=today
         items.append(item)
+        item['collectorVersion']=2
         print(name, item['status'], len(item['reports']), flush=True)
     result = {'schemaVersion':1,'institutions':items}
     path.parent.mkdir(exist_ok=True); path.write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
