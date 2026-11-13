@@ -4,3 +4,5 @@ site/data/market.json
 site/data/flows.json
 .env
 .env.*
+
+site/data/institutions.json
