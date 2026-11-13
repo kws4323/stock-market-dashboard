@@ -1,3 +1,6 @@
 __pycache__/
 .venv/
 site/data/market.json
+site/data/flows.json
+.env
+.env.*

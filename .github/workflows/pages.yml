@@ -13,6 +13,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
@@ -25,6 +27,22 @@ jobs:
         run: |
           python scripts/test_collect.py
           python scripts/collect.py
+      - name: Validate investor flow calculations
+        run: python scripts/test_flows.py
+      - name: Collect Korean investor flows
+        env:
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+        run: python scripts/flows.py
+      - name: Preserve daily investor history
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/flows.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update investor history [skip ci]'
+            git push origin HEAD:main
+          fi
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
