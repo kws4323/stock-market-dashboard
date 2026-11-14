@@ -1,5 +1,7 @@
 """Public SEC 13F holdings. No credentials, estimated positions, or synthetic values."""
-import json, os, time, re
+import json, os, time, re, io, zipfile
+from urllib.parse import urljoin
+from html.parser import HTMLParser
 from pathlib import Path
 from datetime import datetime, timezone
 import urllib.request
@@ -16,7 +18,7 @@ CATALOG = [
  ('qia','QIA','국부펀드',None,'공개 투자 사례와 전체 보유목록은 다릅니다. 정량 비교 미연결'),
  ('kic','KIC','국부펀드',1441689,'Korea Investment Corp의 미국 13F 공개분'),
  ('nps','국민연금','연기금',1608046,'국민연금의 미국 13F 공개분. 국내 주식은 포함하지 않음'),
- ('gpif','GPIF','연기금',None,'종목별 보유자료는 연간 Excel 공개. 자동 정량 비교 미연결'),
+ ('gpif','GPIF','연기금',None,'연간 공식 Excel의 일본·해외 주식. 채권·대체자산 제외'),
  ('calpers','CalPERS','연기금',919079,'미국 13F 공개분'),
  ('calstrs','CalSTRS','연기금',1081019,'미국 13F 공개분'),
  ('cpp','CPP Investments','연기금',1283718,'Canada Pension Plan Investment Board의 미국 13F 공개분'),
@@ -100,15 +102,63 @@ def collect(cik, old):
         saved = next((r for r in old if r.get('signature')==signature), None)
         if saved: reports.append(saved); continue
         rows, sources, initialized = [], [], False
-        for f in fs:
+        # Walk backwards so superseded erroneous originals cannot block a valid restatement.
+        for f in reversed(fs):
             new, amendment, url = filing(cik,f)
-            if f['form']=='13F-HR' or amendment.upper()=='RESTATEMENT': rows = new; initialized = True
-            elif amendment.upper()=='NEW HOLDINGS' and initialized: rows.extend(new)
+            if f['form']=='13F-HR' or amendment.upper()=='RESTATEMENT':
+                rows = new + rows; initialized = True
+            elif amendment.upper()=='NEW HOLDINGS': rows = new + rows
             else: raise ValueError('unsupported amendment')
-            sources.append({'url':url,'filed':f['filingDate'],'form':f['form']})
+            sources.insert(0,{'url':url,'filed':f['filingDate'],'form':f['form']})
+            if initialized: break
+        if not initialized: raise ValueError('missing base report')
         rows = merge(rows)
         reports.append({'period':period,'filed':fs[-1]['filingDate'],'signature':signature,'sources':sources,'holdings':rows,'totalUsd':sum(r['usd'] for r in rows)})
     return reports
+
+class Links(HTMLParser):
+    def __init__(self): super().__init__(); self.links=[]; self.href=None; self.label=''
+    def handle_starttag(self,tag,attrs):
+        if tag=='a': self.href=dict(attrs).get('href'); self.label=''
+    def handle_data(self,data):
+        if self.href: self.label+=data
+    def handle_endtag(self,tag):
+        if tag=='a' and self.href: self.links.append((self.href,self.label)); self.href=None
+
+def collect_gpif(old):
+    page=LINKS['gpif']; parser=Links(); parser.feed(get(page).decode('utf-8'))
+    candidates=[(urljoin(page,u),t) for u,t in parser.links if '.xlsx' in u and 'Portfolio holdings' in t]
+    if not candidates: raise ValueError('GPIF holdings link missing')
+    url,label=candidates[0]
+    saved=next((r for r in old if r.get('signature')==url),None)
+    if saved:return [saved]
+    z=zipfile.ZipFile(io.BytesIO(get(url)))
+    ns={'x':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
+    strings=[''.join(t.itertext()) for t in ET.fromstring(z.read('xl/sharedStrings.xml'))]
+    holdings=[]; periods=set()
+    for file in z.namelist():
+        if not (file.startswith('xl/worksheets/sheet') and file.endswith('.xml')):continue
+        rows=[]
+        for row in ET.fromstring(z.read(file)).findall('.//x:row',ns):
+            values={}
+            for c in row:
+                v=c.find('x:v',ns)
+                if v is not None:values[re.sub(r'\d','',c.get('r'))]=strings[int(v.text)] if c.get('t')=='s' else v.text
+            rows.append(values)
+        if not rows or rows[0].get('A') not in ('Domestic Equities','Foreign Equities'):continue
+        if not any(r.get('B')=='ISIN' and r.get('E')=='Market Value (JPY)' for r in rows[:7]):raise ValueError('GPIF layout changed')
+        for r in rows[:7]:
+            for v in r.values():
+                m=re.search(r'as of ([A-Za-z]+ \d{1,2}, \d{4})',v)
+                if m:periods.add(datetime.strptime(m[1],'%b %d, %Y').date().isoformat())
+        for r in rows:
+            isin=r.get('B','')
+            if not re.fullmatch(r'[A-Z]{2}[A-Z0-9]{9}[0-9]',isin):continue
+            code=isin[2:-1] if isin[:2] in ('US','CA') else 'ISIN:'+isin
+            holdings.append({'id':code,'name':r['C'],'class':rows[0]['A'],'jpy':float(r['E']),'shares':float(r['D'])})
+    if len(periods)!=1 or not holdings:raise ValueError('GPIF date or holdings missing')
+    holdings.sort(key=lambda h:-h['jpy'])
+    return [{'period':periods.pop(),'filed':'공식 연간 자료','signature':url,'sources':[{'url':url,'filed':'연간','form':'GPIF Excel'}],'holdings':holdings,'totalJpy':sum(h['jpy'] for h in holdings),'currency':'JPY'}]
 
 def main():
     path = ROOT/'data/institutions.json'
@@ -118,18 +168,18 @@ def main():
     for id, name, group, cik, scope in CATALOG:
         prior = next((x for x in old['institutions'] if x['id']==id), {})
         item = {'id':id,'name':name,'group':group,'cik':cik,'scope':scope,'frequency':'분기' if cik else '연간·수시','url':f'https://www.sec.gov/edgar/browse/?CIK={cik}' if cik else LINKS[id], 'reports':prior.get('reports',[]), 'status':'unconnected'}
-        if cik:
-            if prior.get('checked')==today and prior.get('collectorVersion')==2:
+        if cik or id=='gpif':
+            if prior.get('checked')==today and prior.get('collectorVersion')==3:
                 item.update({k:prior[k] for k in ('checked','status','error') if k in prior})
             else:
                 try:
-                    item['reports'] = collect(cik,item['reports']); item['status']='ok'
+                    item['reports'] = collect(cik,item['reports']) if cik else collect_gpif(item['reports']); item['status']='ok'
                 except Exception as e:
                     item['status']='stale' if item['reports'] else 'error'; item['error']=type(e).__name__
                     print(name, type(e).__name__, str(e)[:160], flush=True)
                 item['checked']=today
         items.append(item)
-        item['collectorVersion']=2
+        item['collectorVersion']=3
         print(name, item['status'], len(item['reports']), flush=True)
     result = {'schemaVersion':1,'institutions':items}
     path.parent.mkdir(exist_ok=True); path.write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')),encoding='utf-8')

@@ -150,5 +150,9 @@
   {
     "symbol": "QQQ",
     "name": "NASDAQ 100 ETF"
+  },
+  {
+    "symbol": "JPY=X",
+    "name": "USD / JPY"
   }
 ]

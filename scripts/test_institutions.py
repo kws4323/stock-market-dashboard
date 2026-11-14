@@ -19,10 +19,10 @@ class Tests(unittest.TestCase):
     def test_amendment_replacement_then_addition(self):
         sub={'filings':{'recent':{'form':['13F-HR','13F-HR/A','13F-HR/A'],'reportDate':['2025-12-31']*3,'filingDate':['2026-01-01','2026-01-02','2026-01-03'],'accessionNumber':['a','b','c']}}}
         row=parse_table(xml(),'2026-01-01')[0]
-        replacements=[(row,'','a'),([{**row[0],'usd':300}],'RESTATEMENT','b'),(row,'NEW HOLDINGS','c')]
+        replacements=[(row,'NEW HOLDINGS','c'),([{**row[0],'usd':300}],'RESTATEMENT','b')]
         with patch('institutions.get',return_value=json.dumps(sub).encode()),patch('institutions.filing',side_effect=replacements):
             r=collect(1,[])[0]
         self.assertEqual(r['totalUsd'],400)
-        self.assertEqual(len(r['sources']),3)
+        self.assertEqual(len(r['sources']),2)
 
 if __name__=='__main__':unittest.main()
