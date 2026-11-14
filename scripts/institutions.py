@@ -95,12 +95,21 @@ def collect(cik, old):
     files = [f for f in files if f['form'] in ('13F-HR','13F-HR/A') and f['reportDate'] and f['filingDate'] <= datetime.now(timezone.utc).date().isoformat()]
     periods = sorted({f['reportDate'] for f in files if f['form']=='13F-HR'}, reverse=True)[:2]
     if not periods: raise ValueError('no recent holdings reports')
-    reports = []
+    reports, failures = [], []
     for period in periods:
         fs = sorted([f for f in files if f['reportDate']==period], key=lambda f:(f['filingDate'],f['accessionNumber']))
+        try: reports.append(collect_period(cik,old,period,fs))
+        except Exception as e:
+            failures.append(period)
+            print('Period unavailable',cik,period,str(e)[:180],flush=True)
+    if not reports: raise ValueError('No validated reporting periods')
+    for report in reports: report['unavailablePeriods']=failures
+    return reports
+
+def collect_period(cik,old,period,fs):
         signature = '|'.join(f['accessionNumber'] for f in fs)
         saved = next((r for r in old if r.get('signature')==signature), None)
-        if saved: reports.append(saved); continue
+        if saved: return saved
         rows, sources, initialized = [], [], False
         # Walk backwards so superseded erroneous originals cannot block a valid restatement.
         for f in reversed(fs):
@@ -113,8 +122,7 @@ def collect(cik, old):
             if initialized: break
         if not initialized: raise ValueError('missing base report')
         rows = merge(rows)
-        reports.append({'period':period,'filed':fs[-1]['filingDate'],'signature':signature,'sources':sources,'holdings':rows,'totalUsd':sum(r['usd'] for r in rows)})
-    return reports
+        return {'period':period,'filed':fs[-1]['filingDate'],'signature':signature,'sources':sources,'holdings':rows,'totalUsd':sum(r['usd'] for r in rows)}
 
 class Links(HTMLParser):
     def __init__(self): super().__init__(); self.links=[]; self.href=None; self.label=''
@@ -169,17 +177,18 @@ def main():
         prior = next((x for x in old['institutions'] if x['id']==id), {})
         item = {'id':id,'name':name,'group':group,'cik':cik,'scope':scope,'frequency':'분기' if cik else '연간·수시','url':f'https://www.sec.gov/edgar/browse/?CIK={cik}' if cik else LINKS[id], 'reports':prior.get('reports',[]), 'status':'unconnected'}
         if cik or id=='gpif':
-            if prior.get('checked')==today and prior.get('collectorVersion')==3:
+            if prior.get('checked')==today and prior.get('collectorVersion')==4:
                 item.update({k:prior[k] for k in ('checked','status','error') if k in prior})
             else:
                 try:
                     item['reports'] = collect(cik,item['reports']) if cik else collect_gpif(item['reports']); item['status']='ok'
+                    if any(r.get('unavailablePeriods') for r in item['reports']):item['status']='stale'
                 except Exception as e:
                     item['status']='stale' if item['reports'] else 'error'; item['error']=type(e).__name__
                     print(name, type(e).__name__, str(e)[:160], flush=True)
                 item['checked']=today
         items.append(item)
-        item['collectorVersion']=3
+        item['collectorVersion']=4
         print(name, item['status'], len(item['reports']), flush=True)
     result = {'schemaVersion':1,'institutions':items}
     path.parent.mkdir(exist_ok=True); path.write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')),encoding='utf-8')

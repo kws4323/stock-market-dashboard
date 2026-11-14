@@ -22,6 +22,7 @@
   const i=data.find(x=>x.id===$('inst-manager').value);if(!i)return;
   const r=report(i),q=$('inst-holding-search').value.toLowerCase();
   $('inst-detail').textContent=i.scope+(r?` · 보유 기준 ${r.period} · 최종 공시 ${r.filed} · 공개분 합계 ${won(total(r))} · ${r.holdings.length.toLocaleString()}개 증권`:' · 해당 기간의 수집된 보유자료 없음');
+  if(r?.unavailablePeriods?.length)$('inst-detail').textContent+=' · 검증 실패로 제외한 기준일: '+r.unavailablePeriods.join(', ');
   $('inst-sources').innerHTML=r?r.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.filed)} ${esc(s.form)} 원문 ↗</a>`).join(' · '):`<a href="${esc(i.url)}" target="_blank" rel="noopener">공식 공개자료 확인 ↗</a>`;
   const holdings=(r?.holdings||[]).filter(h=>(h.name+' '+h.id).toLowerCase().includes(q));
   $('inst-holdings').innerHTML=holdings.length?holdings.map((h,n)=>`<tr><td>${n+1}. ${esc(h.name)}<small>${esc(h.class)} · ${esc(h.id)}</small></td><td>${((h.jpy??h.usd)/(r.totalJpy??r.totalUsd)*100).toFixed(2)}%</td><td title="${exact(dollar(h))}">${won(dollar(h))}</td><td>${h.shares.toLocaleString('ko-KR')}</td></tr>`).join(''):'<tr><td colspan="4" class="inst-empty">표시할 보유종목이 없습니다.</td></tr>';
