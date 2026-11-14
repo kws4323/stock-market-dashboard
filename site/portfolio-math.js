@@ -8,6 +8,8 @@
   const before=institution.reports.find(r=>r.period===expected);
   if(!before)return {rows:[],reason:expected+' 이전 비교 자료 없음'};
   const old=new Map(before.holdings.map(h=>[h.id,h])),now=new Map(current.holdings.map(h=>[h.id,h]));
+  const canonical=s=>s.toUpperCase().replace(/[^A-Z0-9]/g,'');
+  const oldNames=new Set([...old.values()].map(h=>canonical(h.name))),newNames=new Set([...now.values()].map(h=>canonical(h.name)));
   const rows=[];
   for(const id of new Set([...old.keys(),...now.keys()])){
    const a=old.get(id),b=now.get(id),h=b||a,symbol=metadata.mapping?.[id],m=metadata.symbols?.[symbol];
@@ -15,8 +17,7 @@
    if(checked)for(const s of m.splits)if(s.date>before.period&&s.date<=current.period)factor*=s.ratio;
    const prev=(a?.shares||0)*factor,delta=(b?.shares||0)-prev;
    let type=!a?'new':!b?'exit':Math.abs(delta)<1e-6?'same':delta>0?'increase':'decrease';
-   const canonical=s=>s.toUpperCase().replace(/[^A-Z0-9]/g,'');
-   let review=(type==='new'?[...old.values()]:type==='exit'?[...now.values()]:[]).some(x=>x.id!==id&&canonical(x.name)===canonical(h.name));
+   let review=type==='new'?oldNames.has(canonical(h.name)):type==='exit'?newNames.has(canonical(h.name)):false;
    rows.push({id,name:h.name,symbol,a,b,prev,delta,factor,checked,review,type,period:current.period,previous:before.period,weight:weight(b,current),weightChange:weight(b,current)-weight(a,before)});
   }
   return {rows,before};

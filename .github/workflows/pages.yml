@@ -39,6 +39,7 @@ jobs:
           python scripts/test_institutions.py
           python scripts/institutions.py
           node scripts/test_portfolio.cjs
+          node scripts/test_portfolio_ui.cjs
           python scripts/portfolio_metadata.py
       - name: Preserve daily investor history
         run: |

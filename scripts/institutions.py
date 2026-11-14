@@ -188,7 +188,7 @@ def main():
         prior = next((x for x in old['institutions'] if x['id']==id), {})
         item = {'id':id,'name':name,'group':group,'cik':cik,'scope':scope,'frequency':'분기' if cik else '연간·수시','url':f'https://www.sec.gov/edgar/browse/?CIK={cik}' if cik else LINKS[id], 'reports':prior.get('reports',[]), 'status':'unconnected'}
         if cik or id=='gpif':
-            if prior.get('checked')==today and prior.get('collectorVersion')==5 and len(prior.get('reports',[]))>=8:
+            if prior.get('checked')==today and prior.get('collectorVersion')==5 and (not cik or len(prior.get('reports',[]))>=8):
                 item.update({k:prior[k] for k in ('checked','status','error') if k in prior})
             else:
                 try:

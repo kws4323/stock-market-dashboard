@@ -31,7 +31,7 @@ def match(h):
         if symbol=='BRK-B' and cls not in ('CLBNEW','CLB'):continue
         if symbol=='VOO' and cls not in ('S&P500ETF','SP500ETF'):continue
         if symbol=='IVV' and cls not in ('CORESP500ETF',):continue
-        if 'PUT' in cls or 'CALL' in cls or 'PFD' in cls:continue
+        if any(x in cls for x in ('PUT','CALL','PFD','WEXP','WTS','WARR','NOTE','DEB')):continue
         return symbol
     return None
 def main():
