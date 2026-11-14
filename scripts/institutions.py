@@ -93,11 +93,22 @@ def collect(cik, old):
     recent = sub['filings']['recent']
     files = [dict(zip(recent, vs)) for vs in zip(*recent.values())]
     files = [f for f in files if f['form'] in ('13F-HR','13F-HR/A') and f['reportDate'] and f['filingDate'] <= datetime.now(timezone.utc).date().isoformat()]
-    periods = sorted({f['reportDate'] for f in files if f['form']=='13F-HR'}, reverse=True)[:2]
+    # Fetch older submission indexes only when the recent window cannot supply eight quarters.
+    if len({f['reportDate'] for f in files if f['form']=='13F-HR'}) < 8:
+        for archive in sub['filings'].get('files',[])[:2]:
+            past=json.loads(get('https://data.sec.gov/submissions/'+archive['name']))
+            files.extend(dict(zip(past,vs)) for vs in zip(*past.values()) if vs)
+            if len({f.get('reportDate') for f in files if f.get('form')=='13F-HR'})>=8:break
+    files=[f for f in files if f.get('form') in ('13F-HR','13F-HR/A') and f.get('reportDate') and f['filingDate']<=datetime.now(timezone.utc).date().isoformat()]
+    files=list({f['accessionNumber']:f for f in files}.values())
+    periods = sorted({f['reportDate'] for f in files if f['form']=='13F-HR'}, reverse=True)[:8]
     if not periods: raise ValueError('no recent holdings reports')
-    reports, failures = [], []
+    reports, failures, fetched = [], [], 0
     for period in periods:
         fs = sorted([f for f in files if f['reportDate']==period], key=lambda f:(f['filingDate'],f['accessionNumber']))
+        if not any(r['period']==period for r in old):
+            if fetched>=4:continue
+            fetched+=1
         try: reports.append(collect_period(cik,old,period,fs))
         except Exception as e:
             failures.append(period)
@@ -177,7 +188,7 @@ def main():
         prior = next((x for x in old['institutions'] if x['id']==id), {})
         item = {'id':id,'name':name,'group':group,'cik':cik,'scope':scope,'frequency':'분기' if cik else '연간·수시','url':f'https://www.sec.gov/edgar/browse/?CIK={cik}' if cik else LINKS[id], 'reports':prior.get('reports',[]), 'status':'unconnected'}
         if cik or id=='gpif':
-            if prior.get('checked')==today and prior.get('collectorVersion')==4:
+            if prior.get('checked')==today and prior.get('collectorVersion')==5 and len(prior.get('reports',[]))>=8:
                 item.update({k:prior[k] for k in ('checked','status','error') if k in prior})
             else:
                 try:
@@ -188,7 +199,7 @@ def main():
                     print(name, type(e).__name__, str(e)[:160], flush=True)
                 item['checked']=today
         items.append(item)
-        item['collectorVersion']=4
+        item['collectorVersion']=5
         print(name, item['status'], len(item['reports']), flush=True)
     result = {'schemaVersion':1,'institutions':items}
     path.parent.mkdir(exist_ok=True); path.write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')),encoding='utf-8')

@@ -8,6 +8,7 @@
  const exact=v=>fx&&v!=null?Math.round(v*fx.rate).toLocaleString('ko-KR')+'원':'';
  function tab(which){for(const x of ['market','institution']){$(x+'-view').hidden=x!==which;$(x+'-tab').setAttribute('aria-selected',String(x===which))}if(which==='institution'&&!ready)load();if(which==='market')window.dispatchEvent(new Event('resize'))}
  $('market-tab').onclick=()=>tab('market');$('institution-tab').onclick=()=>tab('institution');
+ function updateAnalytics(){window.dispatchEvent(new CustomEvent('portfolio-data',{detail:{data,fx,chosen:[...chosen],period:$('inst-period').value,manager:$('inst-manager').value}}))}
  function common(){
   const active=data.filter(i=>chosen.has(i.id)), available=active.filter(i=>report(i));
   const map=new Map();
@@ -27,7 +28,7 @@
   const holdings=(r?.holdings||[]).filter(h=>(h.name+' '+h.id).toLowerCase().includes(q));
   $('inst-holdings').innerHTML=holdings.length?holdings.map((h,n)=>`<tr><td>${n+1}. ${esc(h.name)}<small>${esc(h.class)} · ${esc(h.id)}</small></td><td>${((h.jpy??h.usd)/(r.totalJpy??r.totalUsd)*100).toFixed(2)}%</td><td title="${exact(dollar(h))}">${won(dollar(h))}</td><td>${h.shares.toLocaleString('ko-KR')}</td></tr>`).join(''):'<tr><td colspan="4" class="inst-empty">표시할 보유종목이 없습니다.</td></tr>';
  }
- function render(){common();portfolio()}
+ function render(){common();portfolio();updateAnalytics()}
  async function load(){
   $('inst-status').textContent='기관 공시 자료를 불러오는 중입니다.';
   try{
@@ -43,8 +44,8 @@
    ready=true;render();
   }catch(e){$('inst-status').textContent=e.message}
  }
- $('inst-selectors').onchange=e=>{if(e.target.checked)chosen.add(e.target.value);else chosen.delete(e.target.value);common()};
- $('inst-all').onclick=()=>{chosen=new Set(data.map(i=>i.id));document.querySelectorAll('#inst-selectors input').forEach(x=>x.checked=true);common()};
- $('inst-none').onclick=()=>{chosen.clear();document.querySelectorAll('#inst-selectors input').forEach(x=>x.checked=false);common()};
- $('inst-period').onchange=render;$('inst-min').onchange=common;$('inst-search').oninput=common;$('inst-manager').onchange=portfolio;$('inst-holding-search').oninput=portfolio;$('inst-refresh').onclick=load;
+ $('inst-selectors').onchange=e=>{if(e.target.checked)chosen.add(e.target.value);else chosen.delete(e.target.value);common();updateAnalytics()};
+ $('inst-all').onclick=()=>{chosen=new Set(data.map(i=>i.id));document.querySelectorAll('#inst-selectors input').forEach(x=>x.checked=true);common();updateAnalytics()};
+ $('inst-none').onclick=()=>{chosen.clear();document.querySelectorAll('#inst-selectors input').forEach(x=>x.checked=false);common();updateAnalytics()};
+ $('inst-period').onchange=render;$('inst-min').onchange=common;$('inst-search').oninput=common;$('inst-manager').onchange=()=>{portfolio();updateAnalytics()};$('inst-holding-search').oninput=portfolio;$('inst-refresh').onclick=load;
 })();

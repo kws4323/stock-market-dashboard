@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
+const context={module:{exports:{}}};vm.runInNewContext(fs.readFileSync(require('path').join(__dirname,'../site/portfolio-math.js'),'utf8'),context);const M=context.module.exports;
+const h=(id,shares)=>({id,name:id,shares,usd:shares*10});
+const r=(period,holdings)=>({period,holdings,totalUsd:holdings.reduce((n,h)=>n+h.usd,0)});
+assert.equal(M.previousPeriod('2026-03-31'),'2025-12-31');
+assert.equal(M.previousPeriod('2024-03-31',true),'2023-03-31');
+const inst={id:'a',name:'A',reports:[r('2026-06-30',[h('X',200),h('NEW',5)]),r('2026-03-31',[h('X',100),h('OLD',2)])]};
+let a=M.compare(inst,inst.reports[0],{mapping:{X:'X'},symbols:{X:{splitStatus:'ok',splitStart:'2020-01-01',splits:[{date:'2026-04-01',ratio:2}]}}});
+assert.equal(a.rows.find(x=>x.id==='X').type,'same');
+assert.equal(a.rows.find(x=>x.id==='OLD').type,'exit');assert.equal(a.rows.find(x=>x.id==='NEW').type,'new');
+assert.ok(M.compare({id:'a',reports:[inst.reports[0]]},inst.reports[0]).reason);
+assert.equal(M.overlap([{institution:inst,result:a},{institution:{name:'B'},result:a}]).length,1);
+const b={...a,rows:a.rows.map(x=>({...x,period:'2026-09-30'}))};assert.equal(M.overlap([{institution:inst,result:a},{institution:{name:'B'},result:b}]).length,0);
+console.log('Portfolio checks passed: consecutive periods, splits, entry/exit, same-quarter overlap');

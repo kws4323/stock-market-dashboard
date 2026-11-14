@@ -6,3 +6,5 @@ site/data/flows.json
 .env.*
 
 site/data/institutions.json
+
+site/data/portfolio-metadata.json
